@@ -7,7 +7,7 @@ export const FooterSubsection = (): JSX.Element => {
   const secondaryLinks = ["Our Team", "Blog", "Contact Us", "Careers"];
 
   return (
-    <footer className="w-full bg-transparent py-16">
+    <footer className="w-full bg-cyan-600 py-16">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between">
           {/* Logo and description section */}

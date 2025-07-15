@@ -21,7 +21,13 @@ export const HeroSectionSubsection = (): JSX.Element => {
     <div className="relative w-full h-[833px]">
       <div className="relative h-[833px]">
         {/* Background image container */}
-        <div className="absolute w-full h-[833px] top-0 left-0"></div>
+        <div className="absolute w-full h-[833px] top-0 left-0">
+          <img
+            className="absolute w-full h-full object-cover"
+            alt="Background"
+            src="/background-img-sea.jpg"
+          />
+        </div>
 
         {/* Image gallery on the right */}
         <div className="absolute w-[830px] h-[536px] top-[183px] right-0">

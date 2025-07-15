@@ -16,9 +16,7 @@ export const HomePage = (): JSX.Element => {
     <div className="bg-white flex flex-col items-center w-full">
       <div className="bg-white w-full max-w-[1400px] flex flex-col">
         <HeroSectionSubsection />
-        <BenefitsOpSubsection />
         <BenefitsSubsection />
-        <DestinationsOpSubsection />
         <DestinationsSubsection />
         <PackagesSubsection />
         <BlogSubsection />
