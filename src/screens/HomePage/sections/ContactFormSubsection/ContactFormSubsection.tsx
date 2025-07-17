@@ -29,10 +29,10 @@ export const ContactFormSubsection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative w-full h-[694px] bg-[#dbe8ec] rounded-xl overflow-hidden">
-      <div className="flex flex-row justify-between h-full p-10">
+    <section className="bg-[#dbe8ec]">
+      <div className="flex flex-row gap-10 container mx-auto h-[600px]">
         {/* Left side content */}
-        <div className="flex flex-col justify-between max-w-[553px]">
+        <div className="flex flex-col justify-between w-1/2">
           <h2 className="text-[64px] text-[#2e2e2e] leading-tight">
             <span className="font-normal">Just Tell us </span>
             <span className="[font-family:'jsMath-cmti10-Regular',Helvetica] italic">
@@ -53,30 +53,13 @@ export const ContactFormSubsection = (): JSX.Element => {
         </div>
 
         {/* Right side form */}
-        <div className="flex flex-col gap-[26px] max-w-[520px]">
-          {/* Tabs */}
-          <Tabs defaultValue="book-tour">
-            <TabsList className="bg-transparent p-0 gap-[9px]">
-              <TabsTrigger
-                value="book-tour"
-                className="bg-[#b9d4db] text-[#2e2e2e] font-medium p-[13px] rounded data-[state=active]:bg-[#b9d4db] data-[state=active]:text-[#2e2e2e]"
-              >
-                Book Tour
-              </TabsTrigger>
-              <TabsTrigger
-                value="message"
-                className="bg-[#b9d4db] text-[#2e2e2e] font-medium p-[13px] rounded data-[state=active]:bg-[#b9d4db] data-[state=active]:text-[#2e2e2e]"
-              >
-                Message
-              </TabsTrigger>
-            </TabsList>
-          </Tabs>
+        <div className="flex flex-col w-1/2 justify-between">
 
           {/* Form fields */}
-          <div className="flex flex-col gap-2.5">
+          <div className="flex flex-col gap-2">
             {formFields.map((field, index) => (
               <Card key={index} className="bg-white rounded-2xl">
-                <CardContent className="flex flex-col items-start gap-6 pl-6 pr-4 py-[27px]">
+                <CardContent className="flex flex-col items-start pl-6 pr-4 py-[27px]">
                   <div
                     className={`w-full text-[#2e2e2e] text-${index < 2 ? "lg" : "base"} ${field.labelClassName}`}
                   >

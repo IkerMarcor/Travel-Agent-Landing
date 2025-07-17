@@ -11,7 +11,7 @@ import { BannerSection } from "./sections/BannerSection";
 export const HomePage = (): JSX.Element => {
   return (
     <div className="bg-white flex flex-col items-center w-full">
-      <div className="bg-white w-full max-w-[1400px] flex flex-col">
+      <div id="home-page" className="bg-white w-full flex flex-col">
         <BannerSection />
         <BenefitsSubsection />
         <DestinationsSubsection />

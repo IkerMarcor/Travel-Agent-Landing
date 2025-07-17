@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
 
 export const BenefitsSubsection = (): JSX.Element => {
@@ -13,7 +12,7 @@ export const BenefitsSubsection = (): JSX.Element => {
         "Explore diverse cultures and stunning landscapes around the globe.",
     },
     {
-      icon: "", // Missing in original code
+      icon: "/cards.svg",
       iconAlt: "Group",
       iconWidth: "w-[62.37px]",
       iconHeight: "h-[31.98px]",
@@ -31,9 +30,9 @@ export const BenefitsSubsection = (): JSX.Element => {
         "At Majestic Travel, we prioritize sustainable and ethical travel practices.",
     },
     {
-      icon: "", // Missing in original code
+      icon: "/tickets.svg",
       iconAlt: "Group",
-      iconWidth: "w-9",
+      iconWidth: "w-9", 
       iconHeight: "h-[31.02px]",
       title: "Easy Booking",
       description:
@@ -42,8 +41,8 @@ export const BenefitsSubsection = (): JSX.Element => {
   ];
 
   return (
-    <section className="w-full max-w-[1340px] mx-auto py-12">
-      <div className="flex flex-col gap-8">
+    <section>
+      <div className="flex flex-col gap-8 container mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-6">
           <h2 className="max-w-[490px] text-5xl text-[#2e2e2e]">
             <span className="font-normal">We </span>

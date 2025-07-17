@@ -8,7 +8,7 @@ export const FooterSubsection = (): JSX.Element => {
 
   return (
     <footer className="w-full bg-cyan-600 py-16">
-      <div className="container mx-auto px-4">
+      <div>
         <div className="flex flex-col md:flex-row justify-between">
           {/* Logo and description section */}
           <div className="flex flex-col gap-8 max-w-[471px]">

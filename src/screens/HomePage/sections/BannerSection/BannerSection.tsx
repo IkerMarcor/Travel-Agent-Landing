@@ -8,7 +8,7 @@ export const BannerSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center text-white relative w-full min-h-screen overflow-hidden bg-[url('/background-img-sea.jpg')] bg-cover bg-center">
+    <section className="items-center justify-center text-white min-h-screen overflow-hidden bg-[url('/background-img-sea.jpg')] bg-cover bg-center">
       {/* Navigation (hidden on small screens) */}
       <div className="hidden md:flex justify-between items-center px-10 py-4 absolute top-0 left-0 right-0 z-10">
         {/* Logo */}

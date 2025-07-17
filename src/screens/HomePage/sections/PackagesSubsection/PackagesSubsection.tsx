@@ -59,7 +59,7 @@ export const PackagesSubsection = (): JSX.Element => {
   ];
 
   return (
-    <div className="w-full py-10">
+    <section>
       <div className="container mx-auto">
         <h2 className="text-5xl text-[#2b2626] font-normal mb-10">
           <span className="font-normal">Our Best </span>
@@ -155,6 +155,6 @@ export const PackagesSubsection = (): JSX.Element => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

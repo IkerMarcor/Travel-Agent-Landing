@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 
@@ -30,7 +29,7 @@ export const DestinationsSubsection = (): JSX.Element => {
   ];
 
   return (
-    <section className="w-full py-12 relative">
+    <section>
       <div className="container mx-auto">
         <h2 className="text-5xl text-[#2e2e2e] mb-6">
           <span className="[font-family:'jsMath-cmmi10-Regular',Helvetica] font-normal">

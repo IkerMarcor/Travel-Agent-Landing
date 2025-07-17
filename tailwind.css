@@ -97,4 +97,11 @@
     @apply bg-background text-foreground m-0 overflow-x-hidden;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+  #home-page > * {
+    @apply md:p-10 py-5 px-4;
+  }
+
+  section {
+    @apply relative flex items-center w-full min-h-screen;
+  }
 }

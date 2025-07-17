@@ -40,7 +40,7 @@ export const FaqSubsection = (): JSX.Element => {
   ];
 
   return (
-    <section className="w-full py-16 flex flex-col md:flex-row gap-8">
+    <section className="flex-col md:flex-row gap-8 container mx-auto">
       <div className="md:w-1/3">
         <h2 className="text-5xl text-[#2e2e2e] font-normal mb-8">
           <span className="font-normal">Frequently Asked </span>

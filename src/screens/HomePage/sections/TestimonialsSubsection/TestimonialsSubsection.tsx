@@ -33,7 +33,7 @@ export const TestimonialsSubsection = (): JSX.Element => {
   ];
 
   return (
-    <section className="w-full py-16 px-4 md:px-8 relative">
+    <section>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
           <h2 className="text-[#2e2e2e] text-5xl leading-normal max-w-3xl">

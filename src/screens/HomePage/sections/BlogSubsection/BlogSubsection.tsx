@@ -26,7 +26,7 @@ export const BlogSubsection = (): JSX.Element => {
   ];
 
   return (
-    <section className="w-full py-16">
+    <section>
       <div className="container mx-auto">
         <h2 className="text-5xl text-[#2e2e2e] font-normal mb-16 font-['Inter',Helvetica]">
           Explore our insights, tips and more.
