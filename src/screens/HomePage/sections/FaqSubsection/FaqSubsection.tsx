@@ -56,8 +56,8 @@ export const FaqSubsection = (): JSX.Element => {
         </p>
       </div>
 
-      <div className="md:w-2/3">
-        <Accordion type="single" collapsible className="w-full space-y-2.5">
+      <div className="md:w-2/3 w-full">
+        <Accordion type="single" collapsible className="space-y-2.5">
           {faqItems.map((item, index) => (
             <AccordionItem
               key={index}

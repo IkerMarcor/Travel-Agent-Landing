@@ -30,9 +30,9 @@ export const ContactFormSubsection = (): JSX.Element => {
 
   return (
     <section className="bg-[#dbe8ec]">
-      <div className="flex flex-row gap-10 container mx-auto h-[600px]">
+      <div className="flex flex-col sm:flex-row gap-10 container mx-auto h-[600px]">
         {/* Left side content */}
-        <div className="flex flex-col justify-between w-1/2">
+        <div className="flex flex-col justify-between w-full">
           <h2 className="text-[64px] text-[#2e2e2e] leading-tight">
             <span className="font-normal">Just Tell us </span>
             <span className="[font-family:'jsMath-cmti10-Regular',Helvetica] italic">
@@ -53,7 +53,7 @@ export const ContactFormSubsection = (): JSX.Element => {
         </div>
 
         {/* Right side form */}
-        <div className="flex flex-col w-1/2 justify-between">
+        <div className="flex flex-col w-full justify-between">
 
           {/* Form fields */}
           <div className="flex flex-col gap-2">

@@ -34,24 +34,16 @@ export const TestimonialsSubsection = (): JSX.Element => {
 
   return (
     <section>
-      <div className="max-w-7xl mx-auto">
+      <div className="overflow-hidden">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
           <h2 className="text-[#2e2e2e] text-5xl leading-normal max-w-3xl">
             Discover What Our Valued <span className="italic">Clients</span>{" "}
             Have to Say About Their Unforgettable Journeys.
           </h2>
 
-          <div className="flex items-center gap-2 mt-4 md:mt-0">
-            <Button variant="outline" size="icon" className="rounded-full">
-              <ChevronLeftIcon className="h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="icon" className="rounded-full">
-              <ChevronRightIcon className="h-5 w-5" />
-            </Button>
-          </div>
         </div>
 
-        <div className="flex flex-nowrap gap-2.5 overflow-x-auto pb-4">
+        <div className="flex flex-nowrap gap-2.5 pb-4">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}

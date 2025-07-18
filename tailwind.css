@@ -104,4 +104,7 @@
   section {
     @apply relative flex items-center w-full min-h-screen;
   }
+  .container {
+    @apply py-4;
+  }
 }

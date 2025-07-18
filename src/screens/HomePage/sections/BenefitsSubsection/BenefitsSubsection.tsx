@@ -43,8 +43,8 @@ export const BenefitsSubsection = (): JSX.Element => {
   return (
     <section>
       <div className="flex flex-col gap-8 container mx-auto">
-        <div className="flex flex-col md:flex-row justify-between gap-6">
-          <h2 className="max-w-[490px] text-5xl text-[#2e2e2e]">
+        <div className="flex flex-col lg:flex-row justify-between gap-6">
+          <h2 className="w-full text-5xl text-[#2e2e2e]">
             <span className="font-normal">We </span>
             <span className="font-['jsMath-cmmi10-Regular',Helvetica]">
               provide
@@ -56,7 +56,7 @@ export const BenefitsSubsection = (): JSX.Element => {
             <span className="font-normal"> services.</span>
           </h2>
 
-          <p className="max-w-[624px] text-base text-[#585858] font-medium leading-6">
+          <p className="w-full md:w-1/2 text-base text-[#585858] font-medium leading-6">
             At Majestic Travel, customer satisfaction is our top priority. We
             offer unparalleled service and personalized experiences to ensure
             your journey is nothing short of exceptional.
