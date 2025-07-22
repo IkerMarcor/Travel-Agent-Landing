@@ -1,6 +1,4 @@
-import React from "react";
-
-export const FooterSubsection = (): JSX.Element => {
+export const FooterSection = (): JSX.Element => {
   // Navigation links data
   const mainLinks = ["Home", "Tours", "Packages", "Our Partner", "Services"];
 

@@ -6,7 +6,7 @@ import {
   AccordionTrigger,
 } from "../../../../components/ui/accordion";
 
-export const FaqSubsection = (): JSX.Element => {
+export const FaqSection = (): JSX.Element => {
   const faqItems = [
     {
       question: "1. What services do you offer?",

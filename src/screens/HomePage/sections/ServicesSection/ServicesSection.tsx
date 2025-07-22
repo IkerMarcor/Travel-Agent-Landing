@@ -1,6 +1,7 @@
+import { motion } from "motion/react";
 import { Card, CardContent } from "../../../../components/ui/card";
 
-export const BenefitsSubsection = (): JSX.Element => {
+export const ServicesSection = (): JSX.Element => {
   const benefitCards = [
     {
       icon: "/vector-37.svg",
@@ -56,7 +57,7 @@ export const BenefitsSubsection = (): JSX.Element => {
             <span className="font-normal"> services.</span>
           </h2>
 
-          <p className="w-full md:w-1/2 text-base text-[#585858] font-medium leading-6">
+          <p className="w-full my-4 text-base text-[#585858] font-medium leading-6">
             At Majestic Travel, customer satisfaction is our top priority. We
             offer unparalleled service and personalized experiences to ensure
             your journey is nothing short of exceptional.
@@ -65,6 +66,14 @@ export const BenefitsSubsection = (): JSX.Element => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
           {benefitCards.map((card, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: index * 0.1 }}
+              viewport={{ once: true }}
+            
+            >
             <Card
               key={index}
               className="bg-[#cceaff] rounded-[11.87px] border-none"
@@ -96,6 +105,7 @@ export const BenefitsSubsection = (): JSX.Element => {
                 </a>
               </CardContent>
             </Card>
+            </motion.div>
           ))}
         </div>
       </div>

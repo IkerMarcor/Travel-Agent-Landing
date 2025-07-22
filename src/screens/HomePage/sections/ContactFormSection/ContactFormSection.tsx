@@ -1,9 +1,7 @@
-import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
-import { Tabs, TabsList, TabsTrigger } from "../../../../components/ui/tabs";
 
-export const ContactFormSubsection = (): JSX.Element => {
+export const ContactFormSection = (): JSX.Element => {
   // Form field data
   const formFields = [
     {
@@ -30,7 +28,7 @@ export const ContactFormSubsection = (): JSX.Element => {
 
   return (
     <section className="bg-[#dbe8ec]">
-      <div className="flex flex-col sm:flex-row gap-10 container mx-auto h-[600px]">
+      <div className="flex flex-col sm:flex-row gap-10 container mx-auto">
         {/* Left side content */}
         <div className="flex flex-col justify-between w-full">
           <h2 className="text-[64px] text-[#2e2e2e] leading-tight">
@@ -53,7 +51,7 @@ export const ContactFormSubsection = (): JSX.Element => {
         </div>
 
         {/* Right side form */}
-        <div className="flex flex-col w-full justify-between">
+        <div className="flex flex-col w-full justify-between gap-6">
 
           {/* Form fields */}
           <div className="flex flex-col gap-2">

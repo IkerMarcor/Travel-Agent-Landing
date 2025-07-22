@@ -1,9 +1,7 @@
-import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
-import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 
-export const TestimonialsSubsection = (): JSX.Element => {
+export const TestimonialsSection = (): JSX.Element => {
   // Testimonial data for mapping
   const testimonials = [
     {

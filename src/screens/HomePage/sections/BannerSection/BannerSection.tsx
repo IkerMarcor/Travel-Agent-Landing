@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
 export const BannerSection = (): JSX.Element => {
   const navItems = [
     { label: "Home", active: true },
@@ -7,11 +10,26 @@ export const BannerSection = (): JSX.Element => {
     { label: "About Us", active: false },
   ];
 
+  const carouselImages = [
+    "/crsl1.jpg",
+    "/crsl2.jpg",
+    "/crsl3.jpg",
+  ];
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % carouselImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [carouselImages.length]);
+
   return (
     <section className="items-center justify-center text-white min-h-screen overflow-hidden bg-[url('/background-img-sea.jpg')] bg-cover bg-center">
-      {/* Navigation (hidden on small screens) */}
+      {/* Navigation */}
       <div className="hidden md:flex justify-between items-center px-10 py-4 absolute top-0 left-0 right-0 z-10">
-        {/* Logo */}
         <img
           className="w-[120px] md:w-[153px] h-auto"
           alt="Logo"
@@ -22,28 +40,33 @@ export const BannerSection = (): JSX.Element => {
           {navItems.map((item, index) => (
             <a
               key={index}
-              className={`font-normal relative w-fit ${
+              className={`font-normal relative w-fit group ${
                 item.active ? "text-yellow-400" : "text-white"
               }`}
               href="#"
             >
               {item.label}
+              <div className="bg-yellow-500 h-[2px] w-0 group-hover:w-full ease-in-out transition-all duration-500"></div>
             </a>
           ))}
         </nav>
-
       </div>
-      <div className="mx-auto w-screen max-w-screen-xl py-16 sm:px-6 sm:py-24 md:grid md:grid-cols-2 md:items-center md:gap-4 lg:px-8 lg:py-32">
+
+      <div className="w-full py-16 sm:px-6 sm:py-24 flex flex-row container mx-auto items-center">
         {/* Text Content */}
-        <div className="max-w-prose text-left">
+        <div className="w-3/5">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 2, bounce: 0 }}
+          viewport={{ once: true }}
+        >
           <h1 className="text-4xl font-bold sm:text-5xl">
-            Dream |<strong className="text-yellow-400"> Explore </strong>|
-            Discover
+            Dream |<strong className="text-yellow-400"> Explore </strong>| Discover
           </h1>
 
           <p className="mt-4 text-base text-pretty sm:text-lg/relaxed">
-            Get the best prices on all excursions and activities across the
-            world.
+            Get the best prices on all excursions and activities across the world.
           </p>
 
           <div className="mt-4 flex gap-4 sm:mt-6">
@@ -54,17 +77,23 @@ export const BannerSection = (): JSX.Element => {
               Explore Now
             </a>
           </div>
+        </motion.div>
         </div>
 
-        {/* Carrousel */}
-        <div className="hidden lg:block">
-          <div className="relative">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="h-1 w-1 rounded-full bg-gray-300" />
-              <div className="h-1 w-1 rounded-full bg-gray-300" />
-              <div className="h-1 w-1 rounded-full bg-gray-300" />
-            </div>
-          </div>
+        {/* Carousel */}
+        <div className="hidden md:block relative h-[400px] rounded-xl overflow-hidden w-1/3 mx-auto">
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={carouselImages[current]}
+              src={carouselImages[current]}
+              alt="Carousel slide"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 1.05 }}
+              transition={{ duration: 1 , delay: 0.2 }}
+              className="w-full h-full object-cover absolute inset-0 rounded-xl"
+            />
+          </AnimatePresence>
         </div>
       </div>
     </section>

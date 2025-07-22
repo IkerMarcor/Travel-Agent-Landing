@@ -1,7 +1,6 @@
-import React from "react";
 import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
 
-export const BlogSubsection = (): JSX.Element => {
+export const BlogSection = (): JSX.Element => {
   const blogPosts = [
     {
       title: "Top 5 Must-See Destinations in Europe",
@@ -32,7 +31,7 @@ export const BlogSubsection = (): JSX.Element => {
           Explore our insights, tips and more.
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 rounded-xl bg-[#dbe8ec] p-6">
           {blogPosts.map((post, index) => (
             <Card key={index} className="border-none shadow-none">
               <div className="h-[246.92px] w-full bg-gray-200 mb-[26px]"></div>
