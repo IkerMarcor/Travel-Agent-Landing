@@ -33,7 +33,7 @@ export const ServicesSection = (): JSX.Element => {
     {
       icon: "/tickets.svg",
       iconAlt: "Group",
-      iconWidth: "w-9", 
+      iconWidth: "w-9",
       iconHeight: "h-[31.02px]",
       title: "Easy Booking",
       description:
@@ -45,19 +45,12 @@ export const ServicesSection = (): JSX.Element => {
     <section>
       <div className="flex flex-col gap-8 container mx-auto">
         <div className="flex flex-col lg:flex-row justify-between gap-6">
-          <h2 className="w-full text-5xl text-[#2e2e2e]">
-            <span className="font-normal">We </span>
-            <span className="font-['jsMath-cmmi10-Regular',Helvetica]">
-              provide
-            </span>
-            <span className="font-normal"> you </span>
-            <span className="font-['jsMath-cmmi10-Regular',Helvetica]">
-              best
-            </span>
-            <span className="font-normal"> services.</span>
+          <h2 className="w-full text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 break-words leading-tight">
+            We <span className="italic font-semibold">provide</span> you{" "}
+            <span className="italic font-semibold">best</span> services.
           </h2>
 
-          <p className="w-full my-4 text-base text-[#585858] font-medium leading-6">
+          <p className="w-full my-4 text-base text-gray-600">
             At Majestic Travel, customer satisfaction is our top priority. We
             offer unparalleled service and personalized experiences to ensure
             your journey is nothing short of exceptional.
@@ -72,11 +65,7 @@ export const ServicesSection = (): JSX.Element => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: index * 0.1 }}
               viewport={{ once: true }}
-            
-            >
-            <Card
-              key={index}
-              className="bg-[#cceaff] rounded-[11.87px] border-none"
+              className="overflow-hidden rounded-xl border-none shadow-lg bg-[#cceaff]"
             >
               <CardContent className="p-6 flex flex-col items-start gap-4">
                 {card.icon ? (
@@ -89,22 +78,19 @@ export const ServicesSection = (): JSX.Element => {
                   <div className={`${card.iconWidth} ${card.iconHeight}`}></div>
                 )}
 
-                <h3 className="text-2xl text-[#2e2e2e] font-normal">
-                  {card.title}
-                </h3>
+                <h3 className="text-2xl font-normal">{card.title}</h3>
 
-                <p className="text-base text-[#585858] font-medium leading-6">
+                <p className="text-base text-gray-600 font-medium leading-6">
                   {card.description}
                 </p>
 
                 <a
                   href="#"
-                  className="text-base text-[#222223] font-medium leading-6 underline"
+                  className="text-base font-medium leading-6 underline"
                 >
                   Learn More
                 </a>
               </CardContent>
-            </Card>
             </motion.div>
           ))}
         </div>

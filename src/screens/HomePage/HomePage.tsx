@@ -20,6 +20,7 @@ export const HomePage = (): JSX.Element => {
         <TestimonialsSection />
         <FaqSection />
         <ContactFormSection />
+        
         <FooterSection />
       </div>
     </div>
