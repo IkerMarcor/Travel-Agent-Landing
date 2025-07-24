@@ -80,7 +80,7 @@ export const BannerSection = (): JSX.Element => {
         </motion.div>
         </div>
 
-        {/* Carousel */}
+        {/* Banner Carousel */}
         <div className="hidden md:block relative h-[400px] rounded-xl overflow-hidden w-1/3 mx-auto">
           <AnimatePresence mode="wait">
             <motion.img

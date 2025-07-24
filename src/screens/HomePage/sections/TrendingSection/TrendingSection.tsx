@@ -1,7 +1,8 @@
 import { Button } from "../../../../components/ui/button";
-import { Card, CardContent } from "../../../../components/ui/card";
+import { CardContent } from "../../../../components/ui/card";
 import { Carousel } from "../../../../components/Carousel";
 import { CarouselItem } from "../../../../components/CarouselItem";
+import { motion } from "motion/react";
 
 export const TrendingSection = (): JSX.Element => {
   // Destination data for mapping
@@ -52,10 +53,14 @@ export const TrendingSection = (): JSX.Element => {
         </h2>
 
         {/* Destination cards */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="pt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {destinations.map((destination, index) => (
-            <Card
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: index * 0.1 }}
+              viewport={{ once: true }}
               className="overflow-hidden rounded-xl shadow-lg group relative"
             >
               <CardContent className="p-0 relative h-[350px] md:h-[450px]">
@@ -83,35 +88,34 @@ export const TrendingSection = (): JSX.Element => {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </motion.div>
           ))}
         </div>
-
-        <Carousel className="pt-8" itemCount={destinations.length}>
-          {destinations.map((d, i) => (
-            <CarouselItem
-              key={i}
-              className="carousel-item min-w-[320px] w-[320px] bg-white rounded-xl overflow-hidden shadow-md"
-            >
-              <img
-                src={d.image}
-                alt={d.name}
-                className="w-full h-[200px] object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-xl font-bold">{d.name}</h3>
-                <p className="text-sm text-gray-600">{d.description}</p>
-                <div className="mt-4 flex gap-2">
-                  <Button className="bg-blue-600 text-white hover:bg-blue-700">
-                    Make a Plan
-                  </Button>
-                  <Button variant="outline">Learn More</Button>
-                </div>
-              </div>
-            </CarouselItem>
-          ))}
-        </Carousel>
       </div>
+      <Carousel className="pt-8 container" itemCount={destinations.length}>
+        {destinations.map((d, i) => (
+          <CarouselItem
+            key={i}
+            className="carousel-item min-w-[320px] w-[320px] bg-white rounded-xl overflow-hidden shadow-md"
+          >
+            <img
+              src={d.image}
+              alt={d.name}
+              className="w-full h-[200px] object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-xl font-bold">{d.name}</h3>
+              <p className="text-sm text-gray-600">{d.description}</p>
+              <div className="mt-4 flex gap-2">
+                <Button className="bg-blue-600 text-white hover:bg-blue-700">
+                  Make a Plan
+                </Button>
+                <Button variant="outline">Learn More</Button>
+              </div>
+            </div>
+          </CarouselItem>
+        ))}
+      </Carousel>
     </section>
   );
 };
