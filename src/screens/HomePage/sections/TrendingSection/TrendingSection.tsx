@@ -3,6 +3,7 @@ import { CardContent } from "../../../../components/ui/card";
 import { Carousel } from "../../../../components/Carousel";
 import { CarouselItem } from "../../../../components/CarouselItem";
 import { motion } from "motion/react";
+import Title from "../../../../components/Title";
 
 export const TrendingSection = (): JSX.Element => {
   // Destination data for mapping
@@ -47,13 +48,13 @@ export const TrendingSection = (): JSX.Element => {
   return (
     <section className="bg-gray-100 grid">
       <div className="container mx-auto">
-        <h2 className="w-full text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 break-words leading-tight">
+        <Title>
           Our <span className="italic font-semibold">Trending</span>{" "}
           Destinations
-        </h2>
+        </Title>
 
         {/* Destination cards */}
-        <div className="pt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {destinations.map((destination, index) => (
             <motion.div
               key={index}

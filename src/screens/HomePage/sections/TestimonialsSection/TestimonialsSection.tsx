@@ -1,5 +1,6 @@
 import { Carousel } from "../../../../components/Carousel";
 import { CarouselItem } from "../../../../components/CarouselItem";
+import Title from "../../../../components/Title";
 import { Button } from "../../../../components/ui/button";
 export const TestimonialsSection = () => {
  // Testimonial data for mapping
@@ -44,11 +45,11 @@ export const TestimonialsSection = () => {
   return (
     <section className="bg-gray-100 py-12">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-6">
-          Discover What Our Valued <span className="italic">Clients</span> Say
-        </h2>
+        <Title>
+          <span className="italic font-semibold">Discover</span> What Our Valued <span className="italic font-semibold">Clients</span> Say
+        </Title>
 
-        <Carousel className="pb-4" itemCount={testimonials.length}>
+        <Carousel itemCount={testimonials.length}>
           {testimonials.map((t, i) => (
             <CarouselItem
               key={i}

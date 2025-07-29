@@ -1,3 +1,4 @@
+import Title from "../../../../components/Title";
 import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
 
 export const BlogSection = (): JSX.Element => {
@@ -55,15 +56,16 @@ export const BlogSection = (): JSX.Element => {
   return (
     <section>
       <div className="container mx-auto">
-        <h2 className="text-5xl text-[#2e2e2e] font-normal mb-16 font-['Inter',Helvetica]">
-          Explore our insights, tips and more.
-        </h2>
+        <Title>
+          <span className="italic font-semibold">Explore</span> our insights, tips and more.
+        </Title>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 rounded-xl bg-[#dbe8ec] p-6">
           {blogPosts.map((post, index) => (
-            <Card key={index} className="border-none shadow-none">
-              <div className="h-[200px] w-full bg-gray-200 mb-[26px] bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${post.image})` }} />
-              <CardContent className="p-0 flex flex-col gap-4">
+            <Card key={index} className="border-none shadow-none bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="h-[200px] w-full bg-gray-200 mb-[26px] bg-cover bg-center rounded-t-lg" style={{ backgroundImage: `url(${post.image})` }} />
+              <div className="p-2">
+              <CardContent className="flex flex-col gap-4">
                 <h3 className="text-2xl text-[#2e2e2e] font-normal font-['Inter',Helvetica]">
                   {post.title}
                 </h3>
@@ -71,7 +73,7 @@ export const BlogSection = (): JSX.Element => {
                   {post.description}
                 </p>
               </CardContent>
-              <CardFooter className="p-0 mt-10">
+              <CardFooter className="mt-5">
                 <a
                   href="#"
                   className="text-base text-[#2e2e2e] font-normal font-['Inter',Helvetica] underline"
@@ -79,6 +81,7 @@ export const BlogSection = (): JSX.Element => {
                   Read More
                 </a>
               </CardFooter>
+              </div>
             </Card>
           ))}
         </div>

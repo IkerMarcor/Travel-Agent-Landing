@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Card, CardContent } from "../../../../components/ui/card";
+import Title from "../../../../components/Title";
 
 export const ServicesSection = (): JSX.Element => {
   const benefitCards = [
@@ -45,10 +46,10 @@ export const ServicesSection = (): JSX.Element => {
     <section>
       <div className="flex flex-col gap-8 container mx-auto">
         <div className="flex flex-col lg:flex-row justify-between gap-6">
-          <h2 className="w-full text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 break-words leading-tight">
+          <Title>
             We <span className="italic font-semibold">provide</span> you{" "}
             <span className="italic font-semibold">best</span> services.
-          </h2>
+          </Title>
 
           <p className="w-full my-4 text-base text-gray-600">
             At Majestic Travel, customer satisfaction is our top priority. We

@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../../../components/ui/accordion";
+import Title from "../../../../components/Title";
 
 export const FaqSection = (): JSX.Element => {
   const faqItems = [
@@ -15,23 +16,23 @@ export const FaqSection = (): JSX.Element => {
     },
     {
       question: "2. How can I book a trip?",
-      answer: "",
+      answer: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       question: "3. Can I customize my itinerary?",
-      answer: "",
+      answer: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       question: "4. What is your cancellation policy?",
-      answer: "",
+      answer: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       question: "5. Do you offer travel insurance?",
-      answer: "",
+      answer: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       question: "6. How do I stay updated on travel advisories?",
-      answer: "",
+      answer: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       question: "7. What payment methods do you accept?",
@@ -42,12 +43,10 @@ export const FaqSection = (): JSX.Element => {
   return (
     <section className="flex-col md:flex-row gap-8 container mx-auto">
       <div className="md:w-1/3">
-        <h2 className="text-5xl text-[#2e2e2e] font-normal mb-8">
-          <span className="font-normal">Frequently Asked </span>
-          <span className="font-['jsMath-cmmi10-Regular',Helvetica]">
-            Questions
-          </span>
-        </h2>
+        <Title>
+          Frequently Asked{" "}
+          <span className="italic font-semibold">Questions</span>
+        </Title>
 
         <p className="text-base text-[#585858] font-medium leading-6">
           Find answers to common inquiries about Tour Travel&#39;s services,

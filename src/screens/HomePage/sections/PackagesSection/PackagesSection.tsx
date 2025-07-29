@@ -1,3 +1,4 @@
+import { Title } from "../../../../components/Title";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 import { motion } from "motion/react";
@@ -76,9 +77,9 @@ export const PackagesSection = (): JSX.Element => {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl sm:text-5xl text-[#2b2626] font-light mb-10">
-          Our Best <span className="font-semibold">Packages</span>
-        </h2>
+        <Title>
+          Our Best <span className="italic font-semibold">Packages</span>
+        </Title>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-6 bg-[#dbe8ec] rounded-xl">
           {packageCards.map((card, index) => (
