@@ -7,6 +7,7 @@ import { FooterSection } from "./sections/FooterSection";
 import { PackagesSection } from "./sections/PackagesSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
 import { BannerSection } from "./sections/BannerSection";
+import { TrustedBySection } from "./sections/TrustedBySection";
 
 export const HomePage = (): JSX.Element => {
   return (
@@ -20,6 +21,7 @@ export const HomePage = (): JSX.Element => {
         <TestimonialsSection />
         <FaqSection />
         <ContactFormSection />
+        <TrustedBySection />
         <FooterSection />
       </div>
     </div>
