@@ -1,11 +1,10 @@
 import { PageCasing } from "../components/PageCasing";
+import { AboutSection } from "@/sections/about_page/AboutSection";
 
 const AboutPage = () => {
   return (
     <PageCasing>
-      <div className="bg-white flex flex-col items-center w-full h-screen">
-        <div>About Us</div>
-      </div>
+      <AboutSection />
     </PageCasing>
   );
 };

@@ -1,4 +1,4 @@
-import { ContactFormSection } from "@/sections/ContactFormSection";
+import { ContactFormSection } from "@/sections/contact_page/ContactFormSection";
 import { PageCasing } from "../components/PageCasing";
 
 const ContactPage = () => {

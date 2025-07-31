@@ -1,4 +1,4 @@
-export const FooterSection = (): JSX.Element => {
+export const Footer = (): JSX.Element => {
   // Navigation links data
   const mainLinks = ["Home", "Tours", "Packages", "Our Partner", "Services"];
 

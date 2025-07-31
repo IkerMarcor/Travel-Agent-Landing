@@ -1,12 +1,12 @@
-import { BannerSection } from "../sections/BannerSection";
-import { ServicesSection } from "../sections/ServicesSection";
-import { TrendingSection } from "../sections/TrendingSection";
-import { PackagesSection } from "../sections/PackagesSection";
-import { BlogSection } from "../sections/BlogSection";
-import { TestimonialsSection } from "../sections/TestimonialsSection";
-import { FaqSection } from "../sections/FaqSection";
-import { ContactFormSection } from "../sections/ContactFormSection";
-import { TrustedBySection } from "../sections/TrustedBySection";
+import { BannerSection } from "../sections/home_page/BannerSection";
+import { ServicesSection } from "../sections/home_page/ServicesSection";
+import { TrendingSection } from "../sections/home_page/TrendingSection";
+import { PackagesSection } from "../sections/home_page/PackagesSection";
+import { BlogSection } from "../sections/home_page/BlogSection";
+import { TestimonialsSection } from "../sections/home_page/TestimonialsSection";
+import { FaqSection } from "../sections/home_page/FaqSection";
+import { ContactFormSection } from "../sections/home_page/ContactFormSection";
+import { TrustedBySection } from "../sections/home_page/TrustedBySection";
 import { PageCasing } from "../components/PageCasing";
 
 const HomePage = () => {

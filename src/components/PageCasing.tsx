@@ -1,4 +1,4 @@
-import { FooterSection } from "../sections/FooterSection";
+import { Footer } from "./Footer";
 import { NavBar } from "./NavBar";
 
 export const PageCasing = ({ children }: { children: React.ReactNode }) => {
@@ -6,7 +6,7 @@ export const PageCasing = ({ children }: { children: React.ReactNode }) => {
     <>
       <NavBar />
       {children}
-      <FooterSection />
+      <Footer />
     </>
   );
 };
