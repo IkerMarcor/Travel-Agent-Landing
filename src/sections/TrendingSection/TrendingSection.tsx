@@ -1,9 +1,9 @@
-import { Button } from "../../../../components/ui/button";
-import { CardContent } from "../../../../components/ui/card";
-import { Carousel } from "../../../../components/Carousel";
-import { CarouselItem } from "../../../../components/CarouselItem";
+import { Button } from "@/components/ui/button";
+import { CardContent } from "@/components/ui/card";
+import { Carousel } from "@/components/Carousel";
+import { CarouselItem } from "@/components/CarouselItem";
 import { motion } from "motion/react";
-import Title from "../../../../components/Title";
+import Title from "@/components/Title";
 
 export const TrendingSection = (): JSX.Element => {
   // Destination data for mapping

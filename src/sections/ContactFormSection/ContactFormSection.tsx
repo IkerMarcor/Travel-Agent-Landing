@@ -1,5 +1,5 @@
-import { Form } from "../../../../components/Form";
-import Title from "../../../../components/Title";
+import { Form } from "@/components/Form";
+import Title from "@/components/Title";
 
 export const ContactFormSection = (): JSX.Element => {
   return (

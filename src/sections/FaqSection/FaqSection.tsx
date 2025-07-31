@@ -1,11 +1,10 @@
-import React from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../../../components/ui/accordion";
-import Title from "../../../../components/Title";
+} from "@/components/ui/accordion";
+import Title from "@/components/Title";
 
 export const FaqSection = (): JSX.Element => {
   const faqItems = [

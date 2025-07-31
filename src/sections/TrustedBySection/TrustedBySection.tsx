@@ -1,4 +1,4 @@
-import Title from "../../../../components/Title";
+import Title from "@/components/Title";
 
 export const TrustedBySection = (): JSX.Element => {
   // Trusted by data for mapping

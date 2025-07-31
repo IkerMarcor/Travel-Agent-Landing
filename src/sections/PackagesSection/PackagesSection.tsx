@@ -1,6 +1,6 @@
-import { Title } from "../../../../components/Title";
-import { Button } from "../../../../components/ui/button";
-import { Card, CardContent } from "../../../../components/ui/card";
+import { Title } from "@/components/Title";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { motion } from "motion/react";
 
 export const PackagesSection = (): JSX.Element => {

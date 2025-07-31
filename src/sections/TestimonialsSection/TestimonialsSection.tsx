@@ -1,7 +1,7 @@
-import { Carousel } from "../../../../components/Carousel";
-import { CarouselItem } from "../../../../components/CarouselItem";
-import Title from "../../../../components/Title";
-import { Button } from "../../../../components/ui/button";
+import { Carousel } from "@/components/Carousel";
+import { CarouselItem } from "@/components/CarouselItem";
+import Title from "@/components/Title";
+import { Button } from "@/components/ui/button";
 export const TestimonialsSection = () => {
  // Testimonial data for mapping
   const testimonials = [

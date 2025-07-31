@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
-import { Card, CardContent } from "../../../../components/ui/card";
-import Title from "../../../../components/Title";
+import Title from "@/components/Title";
 
 export const ServicesSection = (): JSX.Element => {
   const benefitCards = [
@@ -68,7 +67,7 @@ export const ServicesSection = (): JSX.Element => {
               viewport={{ once: true }}
               className="overflow-hidden rounded-xl border-none shadow-lg bg-[#cceaff]"
             >
-              <CardContent className="p-6 flex flex-col items-start gap-4">
+              <div className="p-6 flex flex-col items-start gap-4">
                 {card.icon ? (
                   <img
                     className={`${card.iconWidth} ${card.iconHeight}`}
@@ -91,7 +90,7 @@ export const ServicesSection = (): JSX.Element => {
                 >
                   Learn More
                 </a>
-              </CardContent>
+              </div>
             </motion.div>
           ))}
         </div>

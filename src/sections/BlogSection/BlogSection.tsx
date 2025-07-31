@@ -1,5 +1,5 @@
-import Title from "../../../../components/Title";
-import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
+import Title from "@/components/Title";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 export const BlogSection = (): JSX.Element => {
   const blogPosts = [
