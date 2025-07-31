@@ -12,19 +12,17 @@ import { PageCasing } from "../components/PageCasing";
 const HomePage = () => {
   return (
     <div className="bg-white flex flex-col items-center w-full">
-      <div id="home-page" className="bg-white w-full flex flex-col">
-        <PageCasing>
-          <BannerSection />
-          <ServicesSection />
-          <TrendingSection />
-          <PackagesSection />
-          <BlogSection />
-          <TestimonialsSection />
-          <FaqSection />
-          <ContactFormSection />
-          <TrustedBySection />
-        </PageCasing>
-      </div>
+      <PageCasing>
+        <BannerSection />
+        <ServicesSection />
+        <PackagesSection />
+        <TrendingSection />
+        <BlogSection />
+        <TestimonialsSection />
+        <FaqSection />
+        <ContactFormSection />
+        <TrustedBySection />
+      </PageCasing>
     </div>
   );
 };

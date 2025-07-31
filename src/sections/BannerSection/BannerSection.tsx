@@ -28,31 +28,7 @@ export const BannerSection = (): JSX.Element => {
 
   return (
     <section className="items-center justify-center text-white min-h-screen overflow-hidden bg-[url('/background-img-sea.jpg')] bg-cover bg-center">
-      {/* Navigation */}
-      <div className="hidden md:flex justify-between items-center px-10 py-4 absolute top-0 left-0 right-0 z-10">
-        <img
-          className="w-[120px] md:w-[153px] h-auto"
-          alt="Logo"
-          src="/frame-1000002642.svg"
-        />
-
-        <nav className="flex gap-x-6">
-          {navItems.map((item, index) => (
-            <a
-              key={index}
-              className={`font-normal relative w-fit group ${
-                item.active ? "text-yellow-400" : "text-white"
-              }`}
-              href="#"
-            >
-              {item.label}
-              <div className="bg-yellow-500 h-[2px] w-0 group-hover:w-full ease-in-out transition-all duration-500"></div>
-            </a>
-          ))}
-        </nav>
-      </div>
-
-      <div className="w-full py-16 sm:px-6 sm:py-24 flex flex-row container mx-auto items-center">
+      <div className="w-full flex flex-row container mx-auto items-center">
         {/* Text Content */}
         <div className="w-3/5">
         <motion.div

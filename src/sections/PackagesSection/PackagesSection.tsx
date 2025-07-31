@@ -75,13 +75,13 @@ export const PackagesSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="py-16">
+    <section className=" bg-[#dbe8ec]">
       <div className="container mx-auto px-4">
         <Title>
           Our Best <span className="italic font-semibold">Packages</span>
         </Title>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-6 bg-[#dbe8ec] rounded-xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 rounded-xl">
           {packageCards.map((card, index) => (
             <motion.div
               key={card.id}

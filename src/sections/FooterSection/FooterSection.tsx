@@ -6,7 +6,7 @@ export const FooterSection = (): JSX.Element => {
 
   return (
     <footer className="w-full bg-cyan-600 py-16">
-      <div>
+      <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
           {/* Logo and description section */}
           <div className="flex flex-col gap-8 max-w-[471px]">
@@ -37,7 +37,7 @@ export const FooterSection = (): JSX.Element => {
                 <a
                   key={index}
                   href="#"
-                  className="font-normal text-white text-base tracking-[0.08px] leading-[19.2px] whitespace-nowrap"
+                  className="font-normal text-white text-base tracking-[0.08px] leading-[19.2px] whitespace-nowrap hover:text-gray-300 transition-colors duration-300"
                 >
                   {link}
                 </a>
@@ -50,7 +50,7 @@ export const FooterSection = (): JSX.Element => {
                 <a
                   key={index}
                   href="#"
-                  className="font-normal text-white text-base tracking-[0.08px] leading-[19.2px] whitespace-nowrap"
+                  className="font-normal text-white text-base tracking-[0.08px] leading-[19.2px] whitespace-nowrap hover:text-gray-300 transition-colors duration-300"
                 >
                   {link}
                 </a>
