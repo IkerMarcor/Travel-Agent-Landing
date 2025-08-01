@@ -81,7 +81,7 @@ export const PackagesSection = (): JSX.Element => {
           Our Best <span className="italic font-semibold">Packages</span>
         </Title>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 rounded-xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-xl">
           {packageCards.map((card, index) => (
             <motion.div
               key={card.id}

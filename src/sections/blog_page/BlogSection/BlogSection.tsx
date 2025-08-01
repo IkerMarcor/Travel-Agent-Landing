@@ -1,4 +1,3 @@
-import Title from "@/components/Title";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 export const BlogSection = (): JSX.Element => {
@@ -57,7 +56,7 @@ export const BlogSection = (): JSX.Element => {
     <section className="bg-[#dbe8ec]">
       <div className="container mx-auto">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {blogPosts.map((post, index) => (
             <Card key={index} className="border-none shadow-none bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="h-[200px] w-full bg-gray-200 mb-[26px] bg-cover bg-center rounded-t-lg" style={{ backgroundImage: `url(${post.image})` }} />

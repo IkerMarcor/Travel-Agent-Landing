@@ -1,8 +1,22 @@
+import facebookIcon from "@/svg/facebook-icon.svg";
+import twitterIcon from "@/svg/twitter-icon.svg";
+import instagramIcon from "@/svg/instagram-icon.svg";
+import youtubeIcon from "@/svg/youtube-icon.svg";
+import whatsappIcon from "@/svg/whatsapp-icon.svg";
+
 export const Footer = (): JSX.Element => {
   // Navigation links data
   const mainLinks = ["Home", "Tours", "Packages", "Our Partner", "Services"];
 
   const secondaryLinks = ["Our Team", "Blog", "Contact Us", "Careers"];
+
+  const socialLinks = [
+    { name: "Facebook", icon: facebookIcon },
+    { name: "Twitter", icon: twitterIcon },
+    { name: "Instagram", icon: instagramIcon },
+    { name: "YouTube", icon: youtubeIcon },
+    { name: "WhatsApp", icon: whatsappIcon },
+  ];
 
   return (
     <footer className="w-full bg-cyan-600 py-16">
@@ -22,11 +36,21 @@ export const Footer = (): JSX.Element => {
             </p>
 
             {/* Social media icons */}
-            <img
-              className="flex-none"
-              alt="Social Media Links"
-              src="/frame-48095444.svg"
-            />
+            <div className="flex flex-row h-[90px] w-full gap-4">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href="#"
+                  className="flex items-center justify-center w-[80px] h-[80px] rounded-full bg-sky-950 hover:bg-sky-200 transition-colors duration-300"
+                >
+                  <img
+                    src={social.icon}
+                    alt={`${social.name} icon`}
+                    className="w-1/2 h-1/2"
+                  />
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Navigation links section */}

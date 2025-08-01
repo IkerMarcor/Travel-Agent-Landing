@@ -54,46 +54,53 @@ export const TrendingSection = (): JSX.Element => {
         </Title>
 
         {/* Destination cards */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {destinations.map((destination, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="overflow-hidden rounded-xl shadow-lg group relative"
-            >
-              <CardContent className="p-0 relative h-[350px] md:h-[450px]">
-                <img
-                  src={destination.image}
-                  alt={destination.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="hidden md:block">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 ">
+            {destinations.map((destination, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="overflow-hidden rounded-xl shadow-lg group relative"
+              >
+                <CardContent className="p-0 relative h-[350px] md:h-[450px]">
+                  <img
+                    src={destination.image}
+                    alt={destination.name}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                {/* Hover Content */}
-                <div className="absolute bottom-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-2xl font-semibold mb-2">
-                    {destination.name}
-                  </h3>
-                  <p className="text-sm mb-4">{destination.description}</p>
-                  <div className="flex gap-3">
-                    <Button className="bg-white text-gray-900 hover:bg-gray-100 rounded-lg">
-                      Make a Plan
-                    </Button>
-                    <Button className="bg-white text-gray-900 hover:bg-gray-100 rounded-lg">
-                      Learn More
-                    </Button>
+                  {/* Hover Content */}
+                  <div className="absolute bottom-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 className="text-2xl font-semibold mb-2">
+                      {destination.name}
+                    </h3>
+                    <p className="text-sm mb-4">{destination.description}</p>
+                    <div className="flex gap-3">
+                      <Button className="bg-white text-gray-900 hover:bg-gray-100 rounded-lg">
+                        Make a Plan
+                      </Button>
+                      <Button className="bg-white text-gray-900 hover:bg-gray-100 rounded-lg">
+                        Learn More
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </motion.div>
-          ))}
+                </CardContent>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
-      <Carousel className="pt-8 container" itemCount={destinations.length}>
+
+      {/* Carousel for smaller screens */}
+      <Carousel
+        className="pt-8 container lg:hidden"
+        itemCount={destinations.length}
+      >
         {destinations.map((d, i) => (
           <CarouselItem
             key={i}
