@@ -1,9 +1,9 @@
 import { Carousel } from "@/components/Carousel";
 import { CarouselItem } from "@/components/CarouselItem";
 import Title from "@/components/Title";
-import { Button } from "@/components/ui/button";
+import { ViewAllButton } from "@/components/ViewAllButton";
 export const TestimonialsSection = () => {
- // Testimonial data for mapping
+  // Testimonial data for mapping
   const testimonials = [
     {
       text: "Majestic Travel exceeded all our expectations! Their attention to detail and personalized service made our trip to Italy unforgettable. Can't wait to book our next adventure with them!",
@@ -46,7 +46,8 @@ export const TestimonialsSection = () => {
     <section className="bg-gray-100 py-12">
       <div className="container mx-auto">
         <Title>
-          <span className="italic font-semibold">Discover</span> What Our Valued <span className="italic font-semibold">Clients</span> Say
+          <span className="italic font-semibold">Discover</span> What Our Valued{" "}
+          <span className="italic font-semibold">Clients</span> Say
         </Title>
 
         <Carousel itemCount={testimonials.length}>
@@ -60,7 +61,11 @@ export const TestimonialsSection = () => {
                   <em>{t.text}</em>
                 </p>
                 <footer className="flex items-center gap-3">
-                  <img src={t.picture} alt="" className="w-10 h-10 rounded-full" />
+                  <img
+                    src={t.picture}
+                    alt=""
+                    className="w-10 h-10 rounded-full"
+                  />
                   <div>
                     <div className="font-semibold">{t.author}</div>
                     <div className="text-sm text-gray-500">{t.source}</div>
@@ -71,11 +76,7 @@ export const TestimonialsSection = () => {
           ))}
         </Carousel>
 
-        <div className="flex justify-center mt-8">
-          <Button variant="outline" size="sm" className="rounded-full">
-            View All Testimonials
-          </Button>
-        </div>
+        <ViewAllButton pageName="Testimonials" link="testimonials" />
       </div>
     </section>
   );

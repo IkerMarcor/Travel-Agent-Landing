@@ -7,6 +7,7 @@ import PackagesPage from "./pages/PackagesPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import SingleBlogPage from "./pages/SingleBlogPage";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/blog",
     element: <BlogPage />,
+  },
+  {
+    path: "/blog/:slug",
+    element: <SingleBlogPage />,
   },
   {
     path: "/packages",

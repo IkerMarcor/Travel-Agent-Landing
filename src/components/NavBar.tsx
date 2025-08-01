@@ -15,7 +15,7 @@ export const NavBar = () => {
   return (
      <nav className="fixed bg-sky-950/50 p-4 top-0 left-0 z-50 w-full backdrop-blur-sm">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-lg font-bold">Travel Agent Logo</div>
+        <NavLink to="/" className="text-white text-lg font-bold">Travel Agent Logo</NavLink>
 
         {/* Desktop nav */}
         <ul className="hidden md:flex space-x-4">
