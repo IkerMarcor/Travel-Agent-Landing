@@ -1,21 +1,7 @@
 import Title from "@/components/Title";
+import { trustedByLogos } from "@/data/trustedByLogos";
 
 export const TrustedBySection = (): JSX.Element => {
-  // Trusted by data for mapping
-  const trustedBy = [
-    {
-      name: "Company A",
-      logo: "/Expedia_Logo.png",
-    },
-    {
-      name: "Company B",
-      logo: "/Amazon_Logo.png",
-    },
-    {
-      name: "Company C",
-      logo: "/Tesla_Logo.png",
-    },
-  ];
 
   return (
     <section>
@@ -25,9 +11,8 @@ export const TrustedBySection = (): JSX.Element => {
           <br /> customers worldwide
         </Title>
 
-        {/* Trusted by logos */}
         <div className="flex flex-wrap justify-center gap-8 items-center mt-10 px-4">
-          {trustedBy.map((company, index) => (
+          {trustedByLogos.map((company, index) => (
             <div key={index} className="w-28 md:w-32 flex justify-center">
               <img
                 src={company.logo}

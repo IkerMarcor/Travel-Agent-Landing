@@ -1,20 +1,6 @@
-import facebookIcon from "@/svg/facebook-icon.svg";
-import twitterIcon from "@/svg/twitter-icon.svg";
-import instagramIcon from "@/svg/instagram-icon.svg";
-import youtubeIcon from "@/svg/youtube-icon.svg";
-import whatsappIcon from "@/svg/whatsapp-icon.svg";
+import { mainLinks, secondaryLinks, socialLinks } from "@/data/links";
 
 export const Footer = (): JSX.Element => {
-  const mainLinks = ["Home", "Tours", "Packages", "Our Partner", "Services"];
-  const secondaryLinks = ["Our Team", "Blog", "Contact Us", "Careers"];
-
-  const socialLinks = [
-    { name: "Facebook", icon: facebookIcon, href: "https://facebook.com" },
-    { name: "Twitter", icon: twitterIcon, href: "https://twitter.com" },
-    { name: "Instagram", icon: instagramIcon, href: "https://instagram.com" },
-    { name: "YouTube", icon: youtubeIcon, href: "https://youtube.com" },
-    { name: "WhatsApp", icon: whatsappIcon, href: "https://wa.me/1234567890" },
-  ];
 
   return (
     <footer className="w-full bg-cyan-600 py-16">
@@ -40,14 +26,14 @@ export const Footer = (): JSX.Element => {
                 <a
                   key={index}
                   href={social.href}
-                  aria-label={social.name}
+                  aria-label={social.iconAlt}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-[60px] h-[60px] rounded-full bg-sky-950 hover:bg-sky-200 transition-colors duration-300"
                 >
                   <img
                     src={social.icon}
-                    alt={`${social.name} icon`}
+                    alt={`${social.iconAlt} icon`}
                     className="w-6 h-6 object-contain"
                     loading="lazy"
                     decoding="async"
@@ -63,10 +49,10 @@ export const Footer = (): JSX.Element => {
               {mainLinks.map((link, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={link.to}
                   className="text-white text-base hover:text-gray-300 transition-colors duration-200 whitespace-nowrap"
                 >
-                  {link}
+                  {link.label}
                 </a>
               ))}
             </div>
@@ -75,10 +61,10 @@ export const Footer = (): JSX.Element => {
               {secondaryLinks.map((link, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={link.to}
                   className="text-white text-base hover:text-gray-300 transition-colors duration-200 whitespace-nowrap"
                 >
-                  {link}
+                  {link.label}
                 </a>
               ))}
             </div>

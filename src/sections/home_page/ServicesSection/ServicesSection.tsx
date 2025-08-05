@@ -1,45 +1,8 @@
 import { motion } from "motion/react";
+import { serviceCards } from "@/data/serviceCards";
 import Title from "@/components/Title";
 
 export const ServicesSection = (): JSX.Element => {
-  const benefitCards = [
-    {
-      icon: "/vector-37.svg",
-      iconAlt: "Vector",
-      iconWidth: "w-[29px]",
-      iconHeight: "h-[30.74px]",
-      title: "World wide traveling",
-      description:
-        "Explore diverse cultures and stunning landscapes around the globe.",
-    },
-    {
-      icon: "/cards.svg",
-      iconAlt: "Group",
-      iconWidth: "w-[62.37px]",
-      iconHeight: "h-[31.98px]",
-      title: "Lot of choices",
-      description:
-        "Discover diverse cultures and stunning landscapes across the globe.",
-    },
-    {
-      icon: "/union.svg",
-      iconAlt: "Union",
-      iconWidth: "w-[33px]",
-      iconHeight: "h-[28.24px]",
-      title: "Our Responsibility",
-      description:
-        "At Majestic Travel, we prioritize sustainable and ethical travel practices.",
-    },
-    {
-      icon: "/tickets.svg",
-      iconAlt: "Group",
-      iconWidth: "w-9",
-      iconHeight: "h-[31.02px]",
-      title: "Easy Booking",
-      description:
-        "With Majestic Travel, booking your dream trip is simple and stress-free.",
-    },
-  ];
 
   return (
     <section>
@@ -58,7 +21,7 @@ export const ServicesSection = (): JSX.Element => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {benefitCards.map((card, index) => (
+          {serviceCards.map((card, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
@@ -70,12 +33,11 @@ export const ServicesSection = (): JSX.Element => {
               <div className="p-6 flex flex-col items-start gap-4">
                 {card.icon ? (
                   <img
-                    className={`${card.iconWidth} ${card.iconHeight}`}
                     alt={card.iconAlt}
                     src={card.icon}
                   />
                 ) : (
-                  <div className={`${card.iconWidth} ${card.iconHeight}`}></div>
+                  <span>No icon</span>
                 )}
 
                 <h3 className="text-2xl font-normal">{card.title}</h3>
@@ -84,12 +46,6 @@ export const ServicesSection = (): JSX.Element => {
                   {card.description}
                 </p>
 
-                <a
-                  href="#"
-                  className="text-base font-medium leading-6 underline"
-                >
-                  Learn More
-                </a>
               </div>
             </motion.div>
           ))}

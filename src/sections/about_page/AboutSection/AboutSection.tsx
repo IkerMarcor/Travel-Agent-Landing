@@ -22,7 +22,7 @@ export const AboutSection = (): JSX.Element => {
           {/* Image or illustration */}
           <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
             <img
-              src="/team.jpg" // 🔁 Replace with your image path
+              src="/team.jpg" 
               alt="Happy travelers"
               className="w-full h-full object-cover"
             />

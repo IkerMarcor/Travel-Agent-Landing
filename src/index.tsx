@@ -9,6 +9,7 @@ import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import SingleBlogPage from "./pages/SingleBlogPage";
+import { TestimonialsPage } from "./pages/TestimonialsPage";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <AboutPage />,
+      },
+      {
+        path: "testimonials",
+        element: <TestimonialsPage />,
       },
       {
         path: "*",

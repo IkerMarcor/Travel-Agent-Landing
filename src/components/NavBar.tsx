@@ -1,17 +1,11 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
+import { mainLinks } from "@/data/links";
 
 export const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-    const links = [
-        { to: "/", label: "Home" },
-        { to: "/blog", label: "Blog" },
-        { to: "/packages", label: "Packages" },
-        { to: "/contact", label: "Contact Us" },
-        { to: "/about", label: "About Us" },
-    ];
   return (
      <nav className="fixed bg-sky-950/50 p-4 top-0 left-0 z-50 w-full backdrop-blur-sm">
       <div className="container mx-auto flex justify-between items-center">
@@ -19,7 +13,7 @@ export const NavBar = () => {
 
         {/* Desktop nav */}
         <ul className="hidden md:flex space-x-4">
-          {links.map(link => (
+          {mainLinks.map(link => (
             <li key={link.to}>
               <NavLink
                 to={link.to}
@@ -48,7 +42,7 @@ export const NavBar = () => {
       {/* Mobile dropdown menu */}
       {mobileMenuOpen && (
         <div className="md:hidden mt-4 px-4 space-y-2">
-          {links.map(link => (
+          {mainLinks.map(link => (
             <NavLink
               key={link.to}
               to={link.to}
