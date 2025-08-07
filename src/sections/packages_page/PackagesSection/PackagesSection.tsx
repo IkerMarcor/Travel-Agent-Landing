@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 type PackageCard = {
   image: string;
@@ -21,7 +21,7 @@ export const PackagesSection = (): JSX.Element => {
     <section className=" bg-[#dbe8ec]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 rounded-xl">
-          {cards.map((card, index) => (
+          {cards.map((card) => (
             <Card className="relative rounded-xl overflow-hidden shadow-md h-full group">
               {/* Featured Tag */}
               {card.isFeatured && (
