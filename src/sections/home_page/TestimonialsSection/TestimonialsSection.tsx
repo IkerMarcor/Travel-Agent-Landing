@@ -8,7 +8,7 @@ export const TestimonialsSection = () => {
 
   return (
     <section className="bg-gray-100 py-12">
-      <div className="container mx-auto">
+      <div className="container mx-auto p-0">
         <Title>
           <span className="italic font-semibold">Discover</span> What Our Valued{" "}
           <span className="italic font-semibold">Clients</span> Say
