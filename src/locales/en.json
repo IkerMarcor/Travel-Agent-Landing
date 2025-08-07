@@ -1,0 +1,86 @@
+{
+  "section": {
+    "banner": {
+      "title": "Dream |<1> Explore </1>| Discover",
+      "description": "Get the best prices on all excursions and activities across the world.",
+      "link": "Explore Now"
+    },
+    "services": {
+      "title": "We <1>provide</1> you <4>best</4> services.",
+      "description": "At Majestic Travel, customer satisfaction is our top priority. We offer unparalleled service and personalized experiences to ensure your journey is nothing short of exceptional.",
+      "cards": [
+        {
+          "icon": "/vector-37.svg",
+          "iconAlt": "Vector",
+          "title": "World wide traveling",
+          "description": "Explore diverse cultures and stunning landscapes around the globe."
+        },
+        {
+          "icon": "/cards.svg",
+          "iconAlt": "Group",
+          "title": "Lot of choices",
+          "description": "Discover diverse cultures and stunning landscapes across the globe."
+        },
+        {
+          "icon": "/union.svg",
+          "iconAlt": "Union",
+          "title": "Our Responsibility",
+          "description": "At Majestic Travel, we prioritize sustainable and ethical travel practices."
+        },
+        {
+          "icon": "/tickets.svg",
+          "iconAlt": "Group",
+          "title": "Easy Booking",
+          "description": "With Majestic Travel, booking your dream trip is simple and stress-free."
+        }
+      ]
+    },
+    "packages": {
+      "title": "Our Best <1>Packages</1>",
+      "cards": [
+        {
+          "image": "/dubai.jpg",
+          "name": "Ain, Dubai",
+          "description": "Experience incredible Dubai moments at the world's largest and tallest observation wheel, 250 meters in the sky!",
+          "hasBookNow": true,
+          "isFeatured": false
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1080&q=80",
+          "name": "Amalfi Coast, Italy",
+          "description": "Enjoy a scenic drive along Italy's most enchanting coastline. Stroll through picturesque villages, savor authentic Italian cuisine, and relax by the Tyrrhenian Sea.",
+          "hasBookNow": false,
+          "isFeatured": false
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1080&q=80",
+          "name": "Sydney, Australia",
+          "description": "Discover the vibrant city of Sydney, with its iconic Opera House, golden beaches, and vibrant city life. Ideal for those seeking culture, nature, and adventure all in one.",
+          "hasBookNow": false,
+          "isFeatured": true
+        },
+        {
+          "image": "/antelope-canyon-arizona.jpg",
+          "name": "Antelope Canyon, USA",
+          "description": "Explore one of the world's most spectacular slot canyons. Marvel at the natural shapes, light, and shadows on a unique guided tour of the Arizona desert.",
+          "hasBookNow": false,
+          "isFeatured": false
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1080&q=80",
+          "name": "Chapada dos Veadeiros, Brazil",
+          "description": "Immerse yourself in a mystical experience amidst waterfalls, canyons, and lush landscapes. Ideal for nature and ecotourism lovers.",
+          "hasBookNow": false,
+          "isFeatured": true
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1080&q=80",
+          "name": "Sahara Desert, Morocco",
+          "description": "Experience the magic of the Sahara with a sunset camel trek, nights under the stars in a Berber camp, and visits to hidden oases among the dunes.",
+          "hasBookNow": false,
+          "isFeatured": false
+        }
+      ]
+    }
+  }
+}

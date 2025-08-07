@@ -1,7 +1,9 @@
 import { motion } from "motion/react";
 import { ShowcaseCarousel } from "@/components/ShowcaseCarousel";
+import { useTranslation, Trans } from "react-i18next";
 
 export const BannerSection = (): JSX.Element => {
+  const { t } = useTranslation();
   const carouselImages = ["/crsl1.jpg", "/crsl2.jpg", "/crsl3.jpg"];
 
   return (
@@ -16,13 +18,14 @@ export const BannerSection = (): JSX.Element => {
             viewport={{ once: true }}
           >
             <h1 className="text-4xl font-bold sm:text-5xl">
-              Dream |<strong className="text-yellow-400"> Explore </strong>|
-              Discover
+              <Trans i18nKey="section.banner.title">
+                Dream |<strong className="text-yellow-400"> Explore </strong>|
+                Discover
+              </Trans>
             </h1>
 
             <p className="mt-4 text-base text-pretty sm:text-lg/relaxed">
-              Get the best prices on all excursions and activities across the
-              world.
+              {t("section.banner.description")}
             </p>
 
             <div className="mt-4 flex gap-4 sm:mt-6">
@@ -30,7 +33,7 @@ export const BannerSection = (): JSX.Element => {
                 className="inline-block rounded border border-yellow-500 bg-yellow-500 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-yellow-400"
                 href="#"
               >
-                Explore Now
+                {t("section.banner.link")}
               </a>
             </div>
           </motion.div>

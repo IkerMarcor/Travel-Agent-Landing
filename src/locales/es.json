@@ -1,0 +1,86 @@
+{
+  "section": {
+    "banner": {
+      "title": "Sueña |<1> Explora </1>| Descubre",
+      "description": "Consiga los mejores precios en todas las excursiones y actividades en todo el mundo.",
+      "link": "Explorar"
+    },
+    "services": {
+      "title": "Le <1>ofrecemos</1> los <4>mejores</4> servicios.",
+      "description": "En Majestic Travel, la satisfacción del cliente es nuestra máxima prioridad. Ofrecemos un servicio inigualable y experiencias personalizadas para garantizar que su viaje sea excepcional.",
+      "cards": [
+        {
+          "icon": "/vector-37.svg",
+          "iconAlt": "Vector",
+          "title": "Viajar por todo el mundo",
+          "description": "Explora diversas culturas y paisajes impresionantes alrededor del mundo."
+        },
+        {
+          "icon": "/cards.svg",
+          "iconAlt": "Group",
+          "title": "Muchas opciones",
+          "description": "Descubra diversas culturas y paisajes impresionantes en todo el mundo."
+        },
+        {
+          "icon": "/union.svg",
+          "iconAlt": "Union",
+          "title": "Nuestra responsabilidad",
+          "description": "En Majestic Travel, priorizamos las prácticas de viaje sostenibles y éticas."
+        },
+        {
+          "icon": "/tickets.svg",
+          "iconAlt": "Group",
+          "title": "Reserva fácilmente",
+          "description": "Con Majestic Travel, reservar el viaje de tus sueños es sencillo y sin estrés."
+        }
+      ]
+    },
+    "packages": {
+      "title": "Nuestros Mejores <1>Paquetes</1>",
+      "cards": [
+        {
+          "image": "/dubai.jpg",
+          "name": "Ain, Dubai",
+          "description": "¡Viva momentos increíbles en Dubái en la noria de observación más grande y alta del mundo, a 250 metros de altura!",
+          "hasBookNow": true,
+          "isFeatured": false
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1080&q=80",
+          "name": "Costa de Amalfi, Italia",
+          "description": "Disfruta de un recorrido escénico por la costa más encantadora de Italia. Pasea por pintorescos pueblos, saborea la auténtica cocina italiana y relájate frente al mar Tirreno.",
+          "hasBookNow": false,
+          "isFeatured": false
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1080&q=80",
+          "name": "Sídney, Australia",
+          "description": "Descubre la vibrante ciudad de Sídney con su icónica Ópera, playas doradas y vida urbana activa. Ideal para quienes buscan cultura, naturaleza y aventura en un solo lugar.",
+          "hasBookNow": false,
+          "isFeatured": true
+        },
+        {
+          "image": "/antelope-canyon-arizona.jpg",
+          "name": "Antelope Canyon, EE.UU.",
+          "description": "Explora uno de los cañones de ranura más espectaculares del mundo. Déjate maravillar por las formas naturales, luces y sombras en un tour guiado único por el desierto de Arizona.",
+          "hasBookNow": false,
+          "isFeatured": false
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1080&q=80",
+          "name": "Chapada dos Veadeiros, Brasil",
+          "description": "Sumérgete en una experiencia mística en medio de cascadas, cañones y paisajes exuberantes. Ideal para los amantes de la naturaleza y el ecoturismo.",
+          "hasBookNow": false,
+          "isFeatured": true
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1080&q=80",
+          "name": "Desierto del Sahara, Marruecos",
+          "description": "Vive la magia del Sahara con una travesía en camello al atardecer, noches bajo las estrellas en un campamento bereber y visitas a oasis ocultos entre las dunas.",
+          "hasBookNow": false,
+          "isFeatured": false
+        }
+      ]
+    }
+  }
+}

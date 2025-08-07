@@ -2,22 +2,37 @@ import { Title } from "@/components/Title";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "motion/react";
-import { packageCards } from "@/data/packageCards";
 import { ViewAllButton } from "@/components/ViewAllButton";
+import { useTranslation, Trans } from "react-i18next";
+
+type PackageCard = {
+  image: string;
+  name: string;
+  description: string;
+  hasBookNow: boolean;
+  isFeatured: boolean;
+};
 
 export const PackagesSection = (): JSX.Element => {
+  const { t } = useTranslation();
+
+  const cards =
+    (t("section.packages.cards", { returnObjects: true }) as PackageCard[]) ??
+    [];
 
   return (
     <section className=" bg-[#dbe8ec]">
       <div className="container mx-auto px-4">
         <Title>
-          Our Best <span className="italic font-semibold">Packages</span>
+          <Trans i18nKey={"section.packages.title"}>
+            Our Best <span className="italic font-semibold">Packages</span>
+          </Trans>
         </Title>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-xl">
-          {packageCards.map((card, index) => (
+          {cards.map((card, index) => (
             <motion.div
-              key={card.id}
+              key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -64,7 +79,7 @@ export const PackagesSection = (): JSX.Element => {
             </motion.div>
           ))}
         </div>
-        <ViewAllButton pageName="Packages" link="packages"/>
+        <ViewAllButton pageName="Packages" link="packages" />
       </div>
     </section>
   );

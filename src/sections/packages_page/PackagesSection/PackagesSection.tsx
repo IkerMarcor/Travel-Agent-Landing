@@ -1,13 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { packageCards } from "@/data/packageCards";
+import { useTranslation, Trans } from "react-i18next";
+
+type PackageCard = {
+  image: string;
+  name: string;
+  description: string;
+  hasBookNow: boolean;
+  isFeatured: boolean;
+};
 
 export const PackagesSection = (): JSX.Element => {
+   const { t } = useTranslation();
+  
+    const cards =
+      (t("section.packages.cards", { returnObjects: true }) as PackageCard[]) ??
+      [];
+  
   return (
     <section className=" bg-[#dbe8ec]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 rounded-xl">
-          {packageCards.map((card, index) => (
+          {cards.map((card, index) => (
             <Card className="relative rounded-xl overflow-hidden shadow-md h-full group">
               {/* Featured Tag */}
               {card.isFeatured && (
@@ -32,12 +46,6 @@ export const PackagesSection = (): JSX.Element => {
                     <h3 className="text-xl font-semibold text-[#2b2626]">
                       {card.name}
                     </h3>
-                    <div className="flex items-center gap-1">
-                      <img src="/vector-6.svg" alt="Star" className="w-5 h-5" />
-                      <span className="text-lg text-[#2b2626] font-medium">
-                        {card.rating}
-                      </span>
-                    </div>
                   </div>
 
                   <p className="text-sm text-[#2b2626] mb-4 leading-relaxed">
