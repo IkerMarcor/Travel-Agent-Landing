@@ -1,20 +1,13 @@
 import { motion } from "motion/react";
 import { ShowcaseCarousel } from "@/components/ShowcaseCarousel";
-import { Link } from "react-router-dom";
 
 export const BannerSection = (): JSX.Element => {
   const carouselImages = ["/crsl1.jpg", "/crsl2.jpg", "/crsl3.jpg"];
 
   return (
-    <section className="relative items-center justify-center text-white min-h-screen overflow-hidden">
-      <img
-        src="/background-img-sea.jpg"
-        alt="Sea background"
-        loading="eager"
-        className="absolute inset-0 w-full h-full object-cover object-center z-0"
-      />
-
-      <div className="relative z-10 w-full flex flex-row container mx-auto items-center">
+    <section className="items-center justify-center text-white min-h-screen overflow-hidden bg-[url('/background-img-sea.jpg')] bg-cover bg-center">
+      <div className="w-full flex flex-row container mx-auto items-center">
+        {/* Text Content */}
         <div className="w-3/5">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -33,12 +26,12 @@ export const BannerSection = (): JSX.Element => {
             </p>
 
             <div className="mt-4 flex gap-4 sm:mt-6">
-              <Link
+              <a
                 className="inline-block rounded border border-yellow-500 bg-yellow-500 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-yellow-400"
-                to="/packages"
+                href="#"
               >
                 Explore Now
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>
