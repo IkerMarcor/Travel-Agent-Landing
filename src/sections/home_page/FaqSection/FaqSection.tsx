@@ -1,50 +1,79 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Title from "@/components/Title";
-import { faqItems } from "@/data/faqItems";
+import { Trans, useTranslation } from "react-i18next";
+
+type AccordionItem = {
+  question: string;
+  answer: string;
+};
 
 export const FaqSection = (): JSX.Element => {
+  const { t } = useTranslation();
+
+  const faqItems =
+    (t("section.faq.accordion", {
+      returnObjects: true,
+    }) as AccordionItem[]) ?? [];
 
   return (
     <section className="flex-col md:flex-row gap-8 container mx-auto">
       <div className="md:w-1/3">
         <Title>
-          Frequently Asked{" "}
-          <span className="italic font-semibold">Questions</span>
+          <Trans i18nKey="section.faq.title">
+            Frequently Asked{" "}
+            <span className="italic font-semibold">Questions</span>
+          </Trans>
         </Title>
 
         <p className="text-base text-[#585858] font-medium leading-6">
-          Find answers to common inquiries about Tour Travel&#39;s services,
-          booking process, and more. Explore our FAQ section to get the
-          information you need for a smooth and enjoyable travel experience.
+          {t("section.faq.description")}
         </p>
       </div>
 
       <div className="md:w-2/3 w-full">
-        <Accordion type="single" collapsible className="space-y-2.5">
+        <div className="space-y-2.5">
           {faqItems.map((item, index) => (
-            <AccordionItem
+            <Accordion
               key={index}
-              value={`item-${index}`}
-              className="bg-[#dbe8ec] rounded-lg p-6 border-none"
+              sx={{
+                backgroundColor: "#dbe8ec",
+                borderRadius: "8px !important",
+                border: "none",
+                "&:before": {
+                  display: "none",
+                },
+                boxShadow: "none",
+                "&.Mui-expanded": {
+                  margin: "8px 0",
+                },
+              }}
             >
-              <AccordionTrigger className="flex justify-between">
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                sx={{
+                  padding: "24px",
+                  "& .MuiAccordionSummary-content": {
+                    margin: "0",
+                  },
+                }}
+              >
                 <span className="font-normal text-base text-[#2e2e2e]">
                   {item.question}
                 </span>
-              </AccordionTrigger>
-              <AccordionContent className="pt-3">
+              </AccordionSummary>
+              <AccordionDetails
+                sx={{
+                  padding: "0 24px 24px 24px",
+                }}
+              >
                 <p className="font-medium text-base text-[#585858] leading-6">
                   {item.answer}
                 </p>
-              </AccordionContent>
-            </AccordionItem>
+              </AccordionDetails>
+            </Accordion>
           ))}
-        </Accordion>
+        </div>
       </div>
     </section>
   );

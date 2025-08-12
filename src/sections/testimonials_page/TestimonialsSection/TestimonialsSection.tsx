@@ -1,12 +1,26 @@
-import { testimonials } from "@/data/testimonialCards";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
+
+type TestimonialCard = {
+  text: string;
+  author: string;
+  source: string;
+  picture: string;
+};
 
 export const TestimonialsSection = () => {
+  const { t } = useTranslation();
+
+  const cards =
+    (t("section.testimonials.cards", {
+      returnObjects: true,
+    }) as TestimonialCard[]) ?? [];
+
   return (
     <section className=" bg-[#dbe8ec]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 rounded-xl">
-          {testimonials.map((t, index) => (
+          {cards.map((t, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
@@ -15,7 +29,7 @@ export const TestimonialsSection = () => {
               viewport={{ once: true }}
               className=" bg-white rounded-xl p-4 shadow-md"
             >
-                <blockquote>
+              <blockquote>
                 <p className="mb-4 text-gray-800 line-clamp-6">
                   <em>{t.text}</em>
                 </p>

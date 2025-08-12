@@ -1,6 +1,4 @@
 import { Title } from "@/components/Title";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { motion } from "motion/react";
 import { ViewAllButton } from "@/components/ViewAllButton";
 import { useTranslation, Trans } from "react-i18next";
@@ -38,7 +36,7 @@ export const PackagesSection = (): JSX.Element => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="relative rounded-xl overflow-hidden shadow-md h-full group">
+              <div className="relative rounded-xl overflow-hidden shadow-md h-full group bg-white">
                 {/* Featured Tag */}
                 {card.isFeatured && (
                   <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded z-20">
@@ -70,12 +68,12 @@ export const PackagesSection = (): JSX.Element => {
                   </div>
 
                   {card.hasBookNow && (
-                    <Button className="bg-[#2b2626] text-white hover:bg-[#1f1f1f]">
+                    <button type="button" className="bg-[#2b2626] text-white hover:bg-[#1f1f1f]">
                       Book Now
-                    </Button>
+                    </button>
                   )}
                 </div>
-              </Card>
+              </div>
             </motion.div>
           ))}
         </div>

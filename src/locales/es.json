@@ -81,6 +81,160 @@
           "isFeatured": false
         }
       ]
+    },
+    "trending": {
+      "title": "Nuestros <1>Destinos</1> en Tendencia",
+      "cards": [
+        {
+          "name": "Palawan",
+          "description": "Palawan, oficialmente la Provincia de Palawan, es una provincia archipelágica de Filipinas que se encuentra en la región de Mimaropa.",
+          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1080&q=80"
+        },
+        {
+          "name": "Noruega",
+          "description": "Noruega, formalmente el Reino de Noruega, es un país nórdico en el norte de Europa, situado en la península escandinava.",
+          "image": "https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=1080&q=80"
+        },
+        {
+          "name": "Seúl",
+          "description": "Seúl, oficialmente Seúl Ciudad Especial, es la capital de Corea del Sur.",
+          "image": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1080&q=80"
+        },
+        {
+          "name": "Desierto del Sahara",
+          "description": "El Desierto del Sahara es el desierto cálido más grande del mundo, conocido por sus vastas dunas de arena y paisajes impresionantes.",
+          "image": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1080&q=80"
+        },
+        {
+          "name": "Chapada dos Veadeiros",
+          "description": "Chapada dos Veadeiros es un parque nacional en Brasil, conocido por sus impresionantes paisajes de montañas, cascadas y biodiversidad.",
+          "image": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1080&q=80"
+        }
+      ]
+    },
+    "blog": {
+      "title": "<0>Explora</0> nuestros conocimientos, consejos y más.",
+      "link": "Leer más",
+      "posts": [
+        {
+          "title": "Top 5 Destinos Imperdibles en Europa",
+          "description": "Descubre el encanto y la historia de los cinco destinos más visitados de Europa. Desde París hasta Roma, explora ciudades icónicas y joyas ocultas.",
+          "image": "/blog-1.jpg"
+        },
+        {
+          "title": "Cómo Planificar las Vacaciones de Playa Perfectas",
+          "description": "Prepárate para el sol y la arena con nuestra guía definitiva para planificar unas vacaciones de playa. Aprende a elegir los mejores destinos y a hacer la maleta como un profesional.",
+          "image": "/blog-2.jpg"
+        },
+        {
+          "title": "Explorando Aventuras Fuera de lo Común",
+          "description": "Descubre los secretos mejor guardados del mundo con nuestra guía de aventuras fuera de lo común. Estas joyas ocultas ofrecen experiencias únicas lejos de las multitudes.",
+          "image": "/blog-3.jpg"
+        },
+        {
+          "title": "Consejos para un Viaje Familiar Sin Estrés",
+          "description": "Haz que los viajes familiares sean más fáciles con nuestros mejores consejos para viajes sin estrés. Desde trucos para hacer la maleta hasta ideas de actividades, te tenemos cubierto para unas vacaciones divertidas y relajantes.",
+          "image": "/blog-4.jpg"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "<0>Descubre</0> lo que nuestros valiosos <5>clientes</5> dicen",
+      "cards": [
+        {
+          "text": "¡Majestic Travel superó todas nuestras expectativas! Su atención al detalle y servicio personalizado hicieron que nuestro viaje a Italia fuera inolvidable. ¡No puedo esperar para reservar nuestra próxima aventura con ellos!",
+          "author": "Johnathan Smith",
+          "picture": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+          "source": "TripAdvisor"
+        },
+        {
+          "text": "Recomiendo encarecidamente a Majestic Travel para cualquier persona que busque unas vacaciones sin complicaciones. Su experiencia y conocimiento local nos ayudaron a descubrir joyas ocultas en Tailandia que nunca habríamos encontrado por nuestra cuenta. ¡Gracias por una experiencia increíble!",
+          "author": "Emily Chen",
+          "picture": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+          "source": "Google Reviews"
+        },
+        {
+          "text": "¡Nuestro viaje familiar a Disney World organizado por Majestic Travel fue impecable! Se encargaron de cada detalle, desde el alojamiento hasta las entradas para los parques temáticos, lo que nos permitió centrarnos en crear recuerdos mágicos juntos. ¡Gracias por unas vacaciones maravillosas!",
+          "author": "David Thompson",
+          "picture": "https://www.profilebakery.com/wp-content/uploads/2023/04/Profile-Image-AI.jpg",
+          "source": "Facebook Reviews"
+        },
+        {
+          "text": "Majestic Travel hizo que planificar nuestra boda de destino soñada en Santorini fuera muy fácil. Su equipo hizo todo lo posible para asegurarse de que cada aspecto de nuestro día especial fuera perfecto. No podríamos haber pedido una mejor experiencia.",
+          "author": "Samantha Patel",
+          "picture": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+          "source": "WeddingWire"
+        },
+        {
+          "text": "Majestic Travel hizo que planificar nuestra boda de destino soñada en Santorini fuera muy fácil. Su equipo hizo todo lo posible para asegurarse de que cada aspecto de nuestro día especial fuera perfecto. No podríamos haber pedido una mejor experiencia. ",
+          "author": "Samantha Patel",
+          "picture": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+          "source": "WeddingWire"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas <2>Frecuentes</2>",
+      "description": "Encuentra respuestas a preguntas comunes sobre los servicios de Tour Travel, el proceso de reserva y más. Explora nuestra sección de preguntas frecuentes para obtener la información que necesitas para una experiencia de viaje fluida y agradable.",
+      "accordion": [
+        {
+          "question": "¿Cómo puedo reservar un viaje con Majestic Travel?",
+          "answer": "Reservar un viaje con Majestic Travel es fácil. Simplemente visite nuestro sitio web, explore nuestros paquetes y destinos, y utilice el sistema de reservas en línea. También puede ponerse en contacto con nuestro equipo de atención al cliente para obtener ayuda personalizada."
+        },
+        {
+          "question": "¿Ofrecen viajes personalizados?",
+          "answer": "Sí, ofrecemos viajes personalizados adaptados a sus intereses y necesidades. Nuestro equipo trabajará con usted para crear un itinerario único que se ajuste a sus preferencias."
+        },
+        {
+          "question": "¿Cuáles son sus políticas de cancelación?",
+          "answer": "Nuestras políticas de cancelación varían según el paquete y el destino. Le recomendamos que revise los términos y condiciones específicos al momento de la reserva o se comunique con nuestro equipo de atención al cliente para obtener más información."
+        },
+        {
+          "question": "¿Proporcionan asistencia durante el viaje?",
+          "answer": "Sí, proporcionamos asistencia las 24 horas durante su viaje. Nuestro equipo está disponible para ayudarlo con cualquier problema o pregunta que pueda tener mientras está de viaje."
+        },
+        {
+          "question": "¿Ofrecen opciones de pago flexibles?",
+          "answer": "Sí, ofrecemos varias opciones de pago, incluyendo pagos en línea seguros, transferencias bancarias y pagos con tarjeta de crédito. También ofrecemos planes de pago flexibles para ciertos paquetes."
+        }
+      ]
+    },
+    "contact-us": {
+      "title": "Solamente <1>Cuándo</1> <br/>y <5>Dónde.</5>",
+      "description": "Simplemente háganos saber su destino deseado y las fechas de viaje, y nos encargaremos del resto. En Tour Travel, hacemos que reservar su próxima aventura sea fácil.",
+      "form-labels": {
+        "name": "Su Nombre",
+        "email": "Su Correo Electrónico",
+        "package": "Su Paquete",
+        "start-date": "Fecha de Inicio",
+        "end-date": "Fecha de Finalización"
+      },
+      "submit": "Enviar",
+      "submitting": "Enviando..."
+    },
+    "trusted-by": {
+      "title": "Confiado por <2>2000+</2><br/> clientes en todo el mundo",
+      "companies": [
+        {
+          "name": "Company A",
+          "logo": "/Expedia_Logo.png"
+        },
+        {
+          "name": "Company B",
+          "logo": "/Amazon_Logo.png"
+        },
+        {
+          "name": "Company C",
+          "logo": "/Tesla_Logo.png"
+        }
+      ]
+    }
+  },
+  "page": {
+    "not-found": {
+      "title": "Error - 404",
+      "description": "Lo siento, la página que busca no existe",
+      "link": "Regresar"
     }
   }
 }

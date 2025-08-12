@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
 
 type PackageCard = {
@@ -22,7 +20,7 @@ export const PackagesSection = (): JSX.Element => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 rounded-xl">
           {cards.map((card) => (
-            <Card className="relative rounded-xl overflow-hidden shadow-md h-full group">
+            <div className="relative rounded-xl overflow-hidden shadow-md h-full group bg-white">
               {/* Featured Tag */}
               {card.isFeatured && (
                 <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded z-20">
@@ -54,12 +52,12 @@ export const PackagesSection = (): JSX.Element => {
                 </div>
 
                 {card.hasBookNow && (
-                  <Button className="bg-[#2b2626] text-white hover:bg-[#1f1f1f]">
+                  <button type="button" className="bg-[#2b2626] text-white hover:bg-[#1f1f1f]">
                     Book Now
-                  </Button>
+                  </button>
                 )}
               </div>
-            </Card>
+            </div>
           ))}
         </div>
       </div>

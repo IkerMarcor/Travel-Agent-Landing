@@ -81,6 +81,159 @@
           "isFeatured": false
         }
       ]
+    },
+    "trending": {
+      "title": "Our <1>Trending</1> Destinations",
+      "cards": [
+        {
+          "name": "Palawan",
+          "description": "Palawan officially the Province of Palawan is an archipelagic province of the Philippines that is located in the region of Mimaropa.",
+          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1080&q=80"
+        },
+        {
+          "name": "Norway",
+          "description": "Norway, formally the Kingdom of Norway, is a Nordic country in Northern Europe, situated on the Scandinavian Peninsula.",
+          "image": "https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=1080&q=80"
+        },
+        {
+          "name": "Seoul",
+          "description": "Seoul, officially Seoul Special City, is the capital of South Korea.",
+          "image": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1080&q=80"
+        },
+        {
+          "name": "Sahara Desert, Morocco",
+          "description": "The Sahara Desert is the largest hot desert in the world, known for its vast sand dunes and stunning landscapes.",
+          "image": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1080&q=80"
+        },
+        {
+          "name": "Chapada dos Veadeiros, Brazil",
+          "description": "Chapada dos Veadeiros is a national park in Brazil, known for its stunning landscapes of mountains, waterfalls, and biodiversity.",
+          "image": "https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1080&q=80"
+        }
+      ]
+    },
+    "blog": {
+      "title": "<0>Explore</0> our insights, tips and more.",
+      "link": "Read More",
+      "posts": [
+        {
+          "title": "Top 5 Must-See Destinations in Europe",
+          "description": "Discover the charm and history of Europe's top five must-visit destinations. From Paris to Rome, explore iconic cities and hidden gems.",
+          "image": "/blog-1.jpg"
+        },
+        {
+          "title": "How to Plan the Perfect Beach Vacation",
+          "description": "Get ready for sun and sand with our ultimate guide to planning a beach vacation. Learn how to choose the best destinations and pack like a pro.",
+          "image": "/blog-2.jpg"
+        },
+        {
+          "title": "Exploring Off-the-Beaten-Path Adventures",
+          "description": "Uncover the world's best-kept secrets with our guide to off-the-beaten-path adventures. These hidden gems offer unique experiences away.",
+          "image": "/blog-3.jpg"
+        },
+        {
+          "title": "Tips for Stress-Free Family Travel",
+          "description": "Make family travel a breeze with our top tips for stress-free trips. From packing hacks to activity ideas, we've got you covered for a fun and relaxing vacation.",
+          "image": "/blog-4.jpg"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "<0>Discover</0> What Our Valued <4>Clients</4> Say",
+      "cards": [
+        {
+          "text": "Majestic Travel exceeded all our expectations! Their attention to detail and personalized service made our trip to Italy unforgettable. Can't wait to book our next adventure with them!",
+          "author": "Johnathan Smith",
+          "picture": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+          "source": "TripAdvisor"
+        },
+        {
+          "text": "I highly recommend Majestic Travel for anyone looking for a hassle-free vacation. Their expertise and local knowledge helped us discover hidden gems in Thailand that we never would have found on our own. Thank you for an amazing experience!",
+          "author": "Emily Chen",
+          "picture": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+          "source": "Google Reviews"
+        },
+        {
+          "text": "Our family trip to Disney World organized by Majestic Travel was flawless! They took care of every detail, from hotel accommodations to theme park tickets, allowing us to focus on creating magical memories together. Thank you for a wonderful vacation!",
+          "author": "David Thompson",
+          "picture": "https://www.profilebakery.com/wp-content/uploads/2023/04/Profile-Image-AI.jpg",
+          "source": "Facebook Reviews"
+        },
+        {
+          "text": "Majestic Travel made planning our dream destination wedding in Santorini a breeze! Their team went above and beyond to ensure every aspect of our special day was perfect. We couldn't have asked for a better experience",
+          "author": "Samantha Patel",
+          "picture": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+          "source": "WeddingWire"
+        },
+        {
+          "text": "Majestic Travel made planning our dream destination wedding in Santorini a breeze! Their team went above and beyond to ensure every aspect of our special day was perfect. We couldn't have asked for a better experience",
+          "author": "Samantha Patel",
+          "picture": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+          "source": "WeddingWire"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked <2>Questions</2>",
+      "description": "Find answers to common inquiries about Tour Travel's services, booking process, and more. Explore our FAQ section to get the information you need for a smooth and enjoyable travel experience.",
+      "accordion": [
+        {
+          "question": "How can I book a trip with Majestic Travel?",
+          "answer": "Booking a trip with Majestic Travel is easy. Simply visit our website, explore our packages and destinations, and use the online booking system. You can also contact our customer service team for personalized assistance."
+        },
+        {
+          "question": "Do you offer customized trips?",
+          "answer": "Yes, we offer customized trips tailored to your interests and needs. Our team will work with you to create a unique itinerary that fits your preferences."
+        },
+        {
+          "question": "What are your cancellation policies?",
+          "answer": "Our cancellation policies vary by package and destination. We recommend reviewing the specific terms and conditions at the time of booking or contacting our customer service team for more information."
+        },
+        {
+          "question": "Do you provide assistance during the trip?",
+          "answer": "Yes, we provide 24/7 assistance during your trip. Our team is available to help you with any issues or questions you may have while traveling."
+        },
+        {
+          "question": "Do you offer flexible payment options?",
+          "answer": "Yes, we offer several payment options, including secure online payments, bank transfers, and credit card payments. We also offer flexible payment plans for certain packages."
+        }
+      ]
+    },
+    "contact-us": {
+      "title": "Just Tell us <1>When</1> <br/>and <5>Where.</5>",
+      "description": "Simply let us know your desired destination and travel dates, and we'll take care of the rest. At Tour Travel, we make booking your next adventure effortless.",
+      "form-labels": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "package": "Your Package",
+        "start-date": "Start Date"
+      },
+      "submit": "Send Message",
+      "submitting": "Sending..."
+    },
+    "trusted-by": {
+      "title": "Trusted by <2>2000+</2><br/> customers worldwide",
+      "companies": [
+        {
+          "name": "Company A",
+          "logo": "/Expedia_Logo.png"
+        },
+        {
+          "name": "Company B",
+          "logo": "/Amazon_Logo.png"
+        },
+        {
+          "name": "Company C",
+          "logo": "/Tesla_Logo.png"
+        }
+      ]
+    }
+  },
+  "page": {
+    "not-found": {
+      "title": "404 - Not Found",
+      "description": "Sorry, the page you are looking for does not exist.",
+      "link": "Go to Home"
     }
   }
 }

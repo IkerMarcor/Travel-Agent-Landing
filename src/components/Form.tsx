@@ -1,7 +1,17 @@
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
 
 export const Form = () => {
+  const { t } = useTranslation();
+
+  const packages =
+    (t("section.packages.cards", { returnObjects: true }) as {
+      name: string;
+    }[]) ?? [];
+
+  const packagesAvailable = packages.map((pkg) => pkg.name);
+
   const form = useRef<HTMLFormElement>(null);
   const [isSending, setIsSending] = useState(false);
 
@@ -41,7 +51,7 @@ export const Form = () => {
           htmlFor="customer_name"
           className="block text-gray-700 font-semibold"
         >
-          Your Name
+          {t("section.contact-us.form-labels.name")}
         </label>
         <input
           type="text"
@@ -57,7 +67,7 @@ export const Form = () => {
           htmlFor="customer_email"
           className="block text-gray-700 font-semibold"
         >
-          Your Email
+          {t("section.contact-us.form-labels.email")}
         </label>
         <input
           type="email"
@@ -73,7 +83,7 @@ export const Form = () => {
           htmlFor="tour_package"
           className="block text-gray-700 font-semibold"
         >
-          Tour Package
+          {t("section.contact-us.form-labels.package")}
         </label>
         <select
           name="tour_package"
@@ -81,15 +91,11 @@ export const Form = () => {
           className="w-full mt-1 border-none outline-none bg-white"
           required
         >
-          <option value="" disabled selected hidden>
-            Select a Tour Package
-          </option>
-          <option value="Thailand - Bangkok">Thailand - Bangkok</option>
-          <option value="Japan - Kyoto">Japan - Kyoto</option>
-          <option value="Italy - Rome">Italy - Rome</option>
-          <option value="Greece – Santorini">Greece – Santorini</option>
-          <option value="South Africa – Kruger National Park">South Africa – Kruger National Park</option>
-          <option value="Peru – Machu Picchu">Peru – Machu Picchu</option>
+          {packagesAvailable.map((packageName) => (
+            <option key={packageName} value={packageName}>
+              {packageName}
+            </option>
+          ))}
         </select>
       </div>
 
@@ -98,7 +104,7 @@ export const Form = () => {
           htmlFor="start_date"
           className="block text-gray-700 font-semibold"
         >
-          Start Date
+          {t("section.contact-us.form-labels.start-date")}
         </label>
         <input
           type="date"
@@ -110,7 +116,7 @@ export const Form = () => {
 
       <div className="bg-white rounded-xl shadow-md p-4">
         <label htmlFor="end_date" className="block text-gray-700 font-semibold">
-          End Date
+          {t("section.contact-us.form-labels.end-date")}
         </label>
         <input
           type="date"
@@ -125,7 +131,9 @@ export const Form = () => {
         disabled={isSending}
         className="bg-[#aacfd8] w-full py-2 rounded shadow text-gray-800 font-semibold hover:bg-[#92bcc9] transition"
       >
-        {isSending ? "Sending..." : "Send"}
+        {isSending
+          ? t("section.contact-us.submitting")
+          : t("section.contact-us.submit")}
       </button>
     </form>
   );
