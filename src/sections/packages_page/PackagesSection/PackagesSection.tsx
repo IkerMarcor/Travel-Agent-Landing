@@ -9,18 +9,21 @@ type PackageCard = {
 };
 
 export const PackagesSection = (): JSX.Element => {
-   const { t } = useTranslation();
-  
-    const cards =
-      (t("section.packages.cards", { returnObjects: true }) as PackageCard[]) ??
-      [];
-  
+  const { t } = useTranslation();
+
+  const cards =
+    (t("section.packages.cards", { returnObjects: true }) as PackageCard[]) ??
+    [];
+
   return (
     <section className=" bg-[#dbe8ec]">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 rounded-xl">
-          {cards.map((card) => (
-            <div className="relative rounded-xl overflow-hidden shadow-md h-full group bg-white">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 rounded-xl">
+          {cards.map((card, index) => (
+            <li
+              key={index}
+              className="relative rounded-xl overflow-hidden shadow-md h-full group bg-white"
+            >
               {/* Featured Tag */}
               {card.isFeatured && (
                 <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded z-20">
@@ -52,14 +55,17 @@ export const PackagesSection = (): JSX.Element => {
                 </div>
 
                 {card.hasBookNow && (
-                  <button type="button" className="bg-[#2b2626] text-white hover:bg-[#1f1f1f]">
-                    Book Now
+                  <button
+                    type="button"
+                    className="flex text-center place-content-center text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-2 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+                  >
+                    {t("common.button.make-a-plan")}
                   </button>
                 )}
               </div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

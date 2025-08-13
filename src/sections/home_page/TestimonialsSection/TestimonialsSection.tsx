@@ -55,7 +55,7 @@ export const TestimonialsSection = () => {
           ))}
         </Carousel>
 
-        <ViewAllButton pageName="Testimonials" link="testimonials" />
+        <ViewAllButton link="testimonials" />
       </div>
     </section>
   );

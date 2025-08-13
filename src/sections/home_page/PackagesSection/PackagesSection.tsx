@@ -27,9 +27,9 @@ export const PackagesSection = (): JSX.Element => {
           </Trans>
         </Title>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-xl">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-xl">
           {cards.map((card, index) => (
-            <motion.div
+            <motion.li
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -68,16 +68,19 @@ export const PackagesSection = (): JSX.Element => {
                   </div>
 
                   {card.hasBookNow && (
-                    <button type="button" className="bg-[#2b2626] text-white hover:bg-[#1f1f1f]">
-                      Book Now
+                    <button
+                      type="button"
+                      className="flex text-center place-content-center text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-2 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+                    >
+                      {t("common.button.make-a-plan")}
                     </button>
                   )}
                 </div>
               </div>
-            </motion.div>
+            </motion.li>
           ))}
-        </div>
-        <ViewAllButton pageName="Packages" link="packages" />
+        </ul>
+        <ViewAllButton link="packages" />
       </div>
     </section>
   );

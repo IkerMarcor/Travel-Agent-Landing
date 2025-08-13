@@ -93,7 +93,7 @@ export const BlogSection = (): JSX.Element => {
             </button>
           </div>
 
-          <ViewAllButton pageName="Blog Posts" link="blog" />
+          <ViewAllButton link="blog" />
         </div>
       </div>
     </section>

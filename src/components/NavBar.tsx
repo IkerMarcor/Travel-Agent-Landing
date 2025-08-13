@@ -1,10 +1,18 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import { mainLinks } from "@/data/links";
+import { useTranslation } from "react-i18next";
+
+type mainLink = {
+  to: string;
+  label: string;
+};
 
 export const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
+  const mainLinks =
+    (t("link.main-links", { returnObjects: true }) as mainLink[]) ?? [];
 
   return (
      <nav className="fixed bg-sky-950/50 p-4 top-0 left-0 z-50 w-full backdrop-blur-sm">

@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { ShowcaseCarousel } from "@/components/ShowcaseCarousel";
 import { useTranslation, Trans } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 export const BannerSection = (): JSX.Element => {
   const { t } = useTranslation();
@@ -29,12 +30,12 @@ export const BannerSection = (): JSX.Element => {
             </p>
 
             <div className="mt-4 flex gap-4 sm:mt-6">
-              <a
+              <NavLink
                 className="inline-block rounded border border-yellow-500 bg-yellow-500 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-yellow-400"
-                href="#"
+                to="/packages"
               >
-                {t("section.banner.link")}
-              </a>
+                {t("common.button.explore-now")}
+              </NavLink>
             </div>
           </motion.div>
         </div>

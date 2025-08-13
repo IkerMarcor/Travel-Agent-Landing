@@ -132,8 +132,8 @@ export const Form = () => {
         className="bg-[#aacfd8] w-full py-2 rounded shadow text-gray-800 font-semibold hover:bg-[#92bcc9] transition"
       >
         {isSending
-          ? t("section.contact-us.submitting")
-          : t("section.contact-us.submit")}
+          ? t("common.button.submitting")
+          : t("common.button.submit")}
       </button>
     </form>
   );

@@ -2,8 +2,7 @@
   "section": {
     "banner": {
       "title": "Sueña |<1> Explora </1>| Descubre",
-      "description": "Consiga los mejores precios en todas las excursiones y actividades en todo el mundo.",
-      "link": "Explorar"
+      "description": "Consiga los mejores precios en todas las excursiones y actividades en todo el mundo."
     },
     "services": {
       "title": "Le <1>ofrecemos</1> los <4>mejores</4> servicios.",
@@ -200,20 +199,18 @@
       ]
     },
     "contact-us": {
-      "title": "Solamente <1>Cuándo</1> <br/>y <5>Dónde.</5>",
-      "description": "Simplemente háganos saber su destino deseado y las fechas de viaje, y nos encargaremos del resto. En Tour Travel, hacemos que reservar su próxima aventura sea fácil.",
+      "title": "Solamente <1>Díganos Cuándo</1> <br/>y <5>Dónde.</5>",
+      "description": "Simplemente Díganos su destino deseado y las fechas de viaje, y nosotros nos encargaremos del resto. En Tour Travel, hacemos que reservar su próxima aventura sea fácil.",
       "form-labels": {
         "name": "Su Nombre",
         "email": "Su Correo Electrónico",
         "package": "Su Paquete",
         "start-date": "Fecha de Inicio",
         "end-date": "Fecha de Finalización"
-      },
-      "submit": "Enviar",
-      "submitting": "Enviando..."
+      }
     },
     "trusted-by": {
-      "title": "Confiado por <2>2000+</2><br/> clientes en todo el mundo",
+      "title": "Confiado por más de <2>2000</2><br/> clientes en todo el mundo",
       "companies": [
         {
           "name": "Company A",
@@ -228,13 +225,70 @@
           "logo": "/Tesla_Logo.png"
         }
       ]
+    },
+    "footer": {
+      "about": "Travel Tourism es una organización orientada al cliente que ofrece soluciones turísticas profesionales de clase mundial.",
+      "copyright": "© 2023 Travel Tourism. Todos los derechos reservados."
     }
   },
   "page": {
     "not-found": {
       "title": "Error - 404",
       "description": "Lo siento, la página que busca no existe",
-      "link": "Regresar"
+      "button": "Regresar"
+    }
+  },
+  "link": {
+    "main-links": [
+      { "to": "/", "label": "Inicio" },
+      { "to": "/blog", "label": "Blog" },
+      { "to": "/packages", "label": "Paquetes" },
+      { "to": "/contact", "label": "Contáctenos" },
+      { "to": "/faq", "label": "FAQ" }
+    ],
+    "secondary-links": [
+      { "to": "/about", "label": "Acerca de" },
+      { "to": "/terms", "label": "Términos de Servicio" },
+      { "to": "/privacy", "label": "Política de Privacidad" },
+      { "to": "/support", "label": "Soporte" },
+      { "to": "/careers", "label": "Carreras" }
+    ],
+    "social-links": [
+      {
+        "iconAlt": "Facebook",
+        "icon": "/svg/facebook-icon.svg",
+        "href": "https://facebook.com"
+      },
+      {
+        "iconAlt": "Twitter",
+        "icon": "/svg/twitter-icon.svg",
+        "href": "https://twitter.com"
+      },
+      {
+        "iconAlt": "Instagram",
+        "icon": "/svg/instagram-icon.svg",
+        "href": "https://instagram.com"
+      },
+      {
+        "iconAlt": "YouTube",
+        "icon": "/svg/youtube-icon.svg",
+        "href": "https://youtube.com"
+      },
+      {
+        "iconAlt": "WhatsApp",
+        "icon": "/svg/whatsapp-icon.svg",
+        "href": "https://wa.me/1234567890"
+      }
+    ]
+  },
+  "common": {
+    "button": {
+      "make-a-plan": "Hacer un Plan",
+      "learn-more": "Aprender Más",
+      "explore-now": "Explorar Ahora",
+      "submit": "Enviar",
+      "submitting": "Enviando...",
+      "view-all": "Ver todo"
     }
   }
 }

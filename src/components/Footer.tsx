@@ -1,6 +1,31 @@
-import { mainLinks, secondaryLinks, socialLinks } from "@/data/links";
+import { useTranslation } from "react-i18next";
+
+type socialLink = {
+  icon: string;
+  iconAlt: string;
+  href: string;
+};
+
+type mainLink = {
+  to: string;
+  label: string;
+};
+
+type secondaryLink = {
+  to: string;
+  label: string;
+};
 
 export const Footer = (): JSX.Element => {
+  const { t } = useTranslation();
+
+  const socialLinks =
+    (t("link.social-links", { returnObjects: true }) as socialLink[]) ?? [];
+  const mainLinks =
+    (t("link.main-links", { returnObjects: true }) as mainLink[]) ?? [];
+  const secondaryLinks =
+    (t("link.secondary-links", { returnObjects: true }) as secondaryLink[]) ??
+    [];
 
   return (
     <footer className="w-full bg-cyan-600 py-16">
@@ -16,8 +41,7 @@ export const Footer = (): JSX.Element => {
               decoding="async"
             />
             <p className="text-white text-lg leading-relaxed">
-              Travel Tourism is a customer-oriented organization offering
-              professional, world-class tourism solutions.
+              {t("section.footer.about")}
             </p>
 
             {/* Social Media Icons */}
@@ -73,7 +97,7 @@ export const Footer = (): JSX.Element => {
 
         {/* Footer Bottom */}
         <div className="text-center mt-12">
-          <p className="text-white text-sm">&copy; 2025 Travel Tourism. All rights reserved.</p>
+          <p className="text-white text-sm">{t("section.footer.copyright")}</p>
         </div>
       </div>
     </footer>

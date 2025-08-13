@@ -2,8 +2,7 @@
   "section": {
     "banner": {
       "title": "Dream |<1> Explore </1>| Discover",
-      "description": "Get the best prices on all excursions and activities across the world.",
-      "link": "Explore Now"
+      "description": "Get the best prices on all excursions and activities across the world."
     },
     "services": {
       "title": "We <1>provide</1> you <4>best</4> services.",
@@ -207,9 +206,7 @@
         "email": "Your Email",
         "package": "Your Package",
         "start-date": "Start Date"
-      },
-      "submit": "Send Message",
-      "submitting": "Sending..."
+      }
     },
     "trusted-by": {
       "title": "Trusted by <2>2000+</2><br/> customers worldwide",
@@ -227,13 +224,70 @@
           "logo": "/Tesla_Logo.png"
         }
       ]
+    },
+    "footer": {
+      "about": "Travel Tourism is a customer-oriented organization offering professional, world-class tourism solutions.",
+      "copyright": "© 2023 Travel Tourism. All rights reserved."
     }
   },
   "page": {
     "not-found": {
       "title": "404 - Not Found",
       "description": "Sorry, the page you are looking for does not exist.",
-      "link": "Go to Home"
+      "button": "Go to Home"
+    }
+  },
+  "link": {
+    "main-links": [
+      { "to": "/", "label": "Home" },
+      { "to": "/blog", "label": "Blog" },
+      { "to": "/packages", "label": "Packages" },
+      { "to": "/contact", "label": "Contact Us" },
+      { "to": "/faq", "label": "FAQ" }
+    ],
+    "secondary-links": [
+      { "to": "/about", "label": "About Us" },
+      { "to": "/terms", "label": "Terms of Service" },
+      { "to": "/privacy", "label": "Privacy Policy" },
+      { "to": "/support", "label": "Support" },
+      { "to": "/careers", "label": "Careers" }
+    ],
+    "social-links": [
+      {
+        "iconAlt": "Facebook",
+        "icon": "/svg/facebook-icon.svg",
+        "href": "https://facebook.com"
+      },
+      {
+        "iconAlt": "Twitter",
+        "icon": "/svg/twitter-icon.svg",
+        "href": "https://twitter.com"
+      },
+      {
+        "iconAlt": "Instagram",
+        "icon": "/svg/instagram-icon.svg",
+        "href": "https://instagram.com"
+      },
+      {
+        "iconAlt": "YouTube",
+        "icon": "/svg/youtube-icon.svg",
+        "href": "https://youtube.com"
+      },
+      {
+        "iconAlt": "WhatsApp",
+        "icon": "/svg/whatsapp-icon.svg",
+        "href": "https://wa.me/1234567890"
+      }
+    ]
+  },
+  "common": {
+    "button": {
+      "make-a-plan": "Make a Plan",
+      "learn-more": "Learn More",
+      "explore-now": "Explore Now",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "view-all": "View All"
     }
   }
 }

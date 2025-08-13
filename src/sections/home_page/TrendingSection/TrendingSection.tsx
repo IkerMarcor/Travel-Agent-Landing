@@ -55,11 +55,17 @@ export const TrendingSection = (): JSX.Element => {
                     </h3>
                     <p className="text-sm mb-4">{destination.description}</p>
                     <div className="flex gap-3">
-                      <button className="bg-white text-gray-900 hover:bg-gray-100 rounded-lg">
-                        Make a Plan
+                      <button
+                        type="button"
+                        className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-2 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                      >
+                        {t("common.button.make-a-plan")}
                       </button>
-                      <button className="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
-                        Learn More
+                      <button
+                        type="button"
+                        className="text-white bg-yellow-600 hover:bg-yellow-500 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                      >
+                        {t("common.button.learn-more")}
                       </button>
                     </div>
                   </div>
@@ -71,10 +77,7 @@ export const TrendingSection = (): JSX.Element => {
       </div>
 
       {/* Carousel for mobile devices */}
-      <Carousel
-        className="pt-8 container lg:hidden"
-        itemCount={cards.length}
-      >
+      <Carousel className="pt-8 container lg:hidden" itemCount={cards.length}>
         {cards.map((d, i) => (
           <CarouselItem
             key={i}
@@ -89,11 +92,17 @@ export const TrendingSection = (): JSX.Element => {
               <h3 className="text-xl font-bold">{d.name}</h3>
               <p className="text-sm text-gray-600">{d.description}</p>
               <div className="mt-4 flex gap-2">
-                <button className="bg-blue-600 text-white hover:bg-blue-700">
-                  Make a Plan
+                <button
+                  type="button"
+                  className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-2 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                >
+                  {t("common.button.make-a-plan")}
                 </button>
-                <button className="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
-                  Learn More
+                <button
+                  type="button"
+                  className="text-white bg-yellow-600 hover:bg-yellow-500 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                >
+                  {t("common.button.learn-more")}
                 </button>
               </div>
             </div>
