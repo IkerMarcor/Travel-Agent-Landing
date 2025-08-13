@@ -1,7 +1,7 @@
 import Title from "@/components/Title";
 import { ChevronRight, ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import { generateSlug } from "@/utils/generateSlug";
+import { generateSlug } from "@/lib/generateSlug";
 import { ViewAllButton } from "@/components/ViewAllButton";
 import { useTranslation, Trans } from "react-i18next";
 

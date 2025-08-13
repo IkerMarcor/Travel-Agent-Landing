@@ -1,4 +1,4 @@
-import { generateSlug } from "@/utils/generateSlug";
+import { generateSlug } from "@/lib/generateSlug";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
